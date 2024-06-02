@@ -32,6 +32,7 @@
 // 22. Category Box js
 // 23. remove notification bar js
 // 24. category box js
+// 25. filter button js 
 
 (function ($) {
     "use strict";
@@ -446,4 +447,20 @@ $(".navbar-toggler-icon-2").click(function () {
 });
 $(".bg-overlay").click(function () {
     $(".bg-overlay, .sidebar-col").removeClass("show");
+});
+
+ /**=====================
+     Filter Sidebar js
+==========================**/
+$(".filter-button").click(function () {
+    $(".bg-overlay, .left-box").addClass("show");
+});
+$(".back-button, .bg-overlay").click(function () {
+    $(".bg-overlay, .left-box").removeClass("show");
+});
+
+$(document).ready(function () {
+    $(".sort-by-button").click(function () {
+        $(".top-filter-menu").toggleClass("show");
+    });
 });
