@@ -1,0 +1,2353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nektoncart">
+    <meta name="keywords" content="Nektoncart">
+    <meta name="author" content="Nektoncart">
+    <link rel="icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+    <title>Nekton Cart - Seller Deshboard</title>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap" rel="stylesheet">
+
+    <!-- bootstrap css -->
+    <link id="rtl-link" rel="stylesheet" type="text/css" href="assets/css/vendors/bootstrap.css">
+
+    <!-- wow css -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+
+    <!-- Plugin CSS file with desired skin css -->
+    <link rel="stylesheet" href="assets/css/vendors/ion.rangeSlider.min.css">
+
+    <!-- animation css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/font-style.css">
+
+    <!-- custom css -->
+    <link id="color-link" rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="theme-color-3 dark">
+
+    <!-- Loader Start -->
+    <div class="fullpage-loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- Loader End -->
+
+    <!-- Header Start -->
+    <header class="header-3">
+        <div class="top-nav sticky-header sticky-header-2">
+            <div class="container-fluid-lg">
+                <div class="row">
+                    <div class="col-xl-12 col">
+                        <div class="navbar-top">
+                            <a href="index.html" class="web-logo nav-logo">
+                                <img src="assets/images/logo/logo.png" class="img-fluid blur-up lazyload" alt="">
+                            </a>
+
+                            <div class="search-full">
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <i data-feather="search" class="font-light"></i>
+                                    </span>
+                                    <input type="text" class="form-control search-type" placeholder="Search here..">
+                                    <span class="input-group-text close-search">
+                                        <i data-feather="x" class="font-light"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="middle-box">
+                                <div class="center-box">
+
+                                    <div class="searchbar-box-2 input-group d-xl-flex d-none">
+                                        <button class="btn search-icon" type="button">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </button>
+                                        <input type="text" class="form-control"
+                                            placeholder="Search for products, styles,brands...">
+                                        <button class="btn search-button" type="button">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="rightside-menu support-sidemenu">
+                                <div class="support-box">
+                                    <div class="support-image">
+                                        <img src="assets/images/icon/support.png" class="img-fluid blur-up lazyload"
+                                            alt="">
+                                    </div>
+                                    <div class="support-number">
+                                        <h2>(123) 456 7890</h2>
+                                        <h4>24/7 Support Center</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto d-xl-none d-block">
+                        <div class="rightside-menu position-static">
+                            <ul class="option-list-2">
+                                <li>
+                                    <a href="javascript:void(0)" class="header-icon search-box search-icon">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="compare.html" class="header-icon">
+                                        <small class="badge-number badge-light">2</small>
+                                        <i class="iconly-Swap icli"></i>
+                                    </a>
+                                </li>
+                                <li class="onhover-dropdown">
+                                    <a href="javascript:void(0)" class="header-icon swap-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </a>
+
+                                    <div class="onhover-div">
+                                        <ul class="cart-list">
+                                            <li>
+                                                <div class="drop-cart">
+                                                    <a href="product-left-thumbnail.html" class="drop-image">
+                                                        <img src="assets/images/vegetable/product/1.png"
+                                                            class="blur-up lazyload" alt="">
+                                                    </a>
+
+                                                    <div class="drop-contain">
+                                                        <a href="product-left-thumbnail.html">
+                                                            <h5>Fantasy Crunchy Choco Chip Cookies</h5>
+                                                        </a>
+                                                        <h6><span>1 x</span> $80.58</h6>
+                                                        <button class="close-button">
+                                                            <i class="fa-solid fa-xmark"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="drop-cart">
+                                                    <a href="product-left-thumbnail.html" class="drop-image">
+                                                        <img src="assets/images/vegetable/product/2.png"
+                                                            class="blur-up lazyload" alt="">
+                                                    </a>
+
+                                                    <div class="drop-contain">
+                                                        <a href="product-left-thumbnail.html">
+                                                            <h5>Peanut Butter Bite Premium Butter Cookies 600 g</h5>
+                                                        </a>
+                                                        <h6><span>1 x</span> $25.68</h6>
+                                                        <button class="close-button">
+                                                            <i class="fa-solid fa-xmark"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                        <div class="price-box">
+                                            <h5>Price :</h5>
+                                            <h4 class="theme-color fw-bold">$106.58</h4>
+                                        </div>
+
+                                        <div class="button-group">
+                                            <a href="cart.html" class="btn btn-sm cart-button">View Cart</a>
+                                            <a href="checkout.html" class="btn btn-sm cart-button theme-bg-color
+                                                    text-white">Checkout</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="cart.html" class="header-icon bag-icon">
+                                        <small class="badge-number badge-light">2</small>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="user-dashboard.html" class="user-box">
+                                <span class="header-icon">
+                                    <i class="fa-regular fa-user"></i>
+                                </span>
+                                <div class="user-name">
+                                    <h6 class="text-content">My Account</h6>
+                                    <h4 class="mt-1">Jennifer V. Ward</h4>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="user-box d-xl-none d-block" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#primaryMenu">
+                                <span class="header-icon">
+                                    <i class="fa-solid fa-bars"></i>
+                                </span>
+                            </a>
+
+                            <a target="_blank" class="btn mobile-app d-xxl-flex d-none"
+                                href="https://play.google.com/store/games?utm_source=apac_med&amp;utm_medium=hasem&amp;utm_content=Oct0121&amp;utm_campaign=Evergreen&amp;pcampaignid=MKT-EDR-apac-in-1003227-med-hasem-py-Evergreen-Oct0121-Text_Search_BKWS-BKWS%7CONSEM_kwid_43700065205026415_creativeid_535350509927_device_c&amp;gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2H1K3VqdJFHodt0-XSnQzcuOuTP-s2aPBE6lG0QVOf8D5cJBsB-DxQaAkNAEALw_wcB&amp;gclsrc=aw.ds">
+                                <div class="mobile-image">
+                                    <img src="assets/images/icon/mobile.png" class="img-fluid blur-up lazyload"
+                                        alt="">
+                                </div>
+
+                                <div class="mobile-name">
+                                    <h4>Download App</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid-lg ">
+            <div class="row">
+                <div class="col-12 position-relative">
+                    <div class="main-nav nav-left-align">
+                        <div class="main-nav navbar navbar-expand-xl navbar-light navbar-sticky p-0">
+                            <div class="offcanvas offcanvas-collapse order-xl-2" id="primaryMenu">
+                                <div class="offcanvas-header navbar-shadow">
+                                    <h5>Menu</h5>
+                                    <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item dropdown dropdown-mega">
+                                            <a class="nav-link ps-0" href="index.html">Home</a>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="shop.html">Shop</a>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle nav-link-two" href="javascript:void(0)"
+                                                data-bs-toggle="dropdown">Category</a>
+
+                                            <div class="dropdown-menu dropdown-menu-3 dropdown-menu-2">
+                                                <div class="row">
+                                                    <div class="col-xl-3">
+                                                        <div class="dropdown-column m-0">
+                                                            <h5 class="dropdown-header">
+                                                                Product Pages </h5>
+                                                            <a class="dropdown-item"
+                                                                href="product-left-thumbnail.html">Product
+                                                                Thumbnail</a>
+                                                            <a class="dropdown-item" href="product-4-image.html">Product
+                                                                Images</a>
+                                                            <a class="dropdown-item" href="product-slider.html">Product
+                                                                Slider</a>
+                                                            <a class="dropdown-item" href="product-sticky.html">Product
+                                                                Sticky</a>
+                                                            <a class="dropdown-item"
+                                                                href="product-accordion.html">Product Accordion</a>
+                                                            <a class="dropdown-item" href="product-circle.html">Product
+                                                                Tab</a>
+                                                            <a class="dropdown-item" href="product-digital.html">Product
+                                                                Digital</a>
+
+                                                            <h5 class="custom-mt dropdown-header">Product Features
+                                                            </h5>
+                                                            <a class="dropdown-item" href="product-circle.html">Bundle
+                                                                (Cross Sale)</a>
+                                                            <a class="dropdown-item"
+                                                                href="product-left-thumbnail.html">Hot Stock
+                                                                Progress <label class="menu-label">New</label>
+                                                            </a>
+                                                            <a class="dropdown-item" href="product-sold-out.html">SOLD
+                                                                OUT</a>
+                                                            <a class="dropdown-item" href="product-circle.html">
+                                                                Sale Countdown</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-3">
+                                                        <div class="dropdown-column m-0">
+                                                            <h5 class="dropdown-header">
+                                                                Product Variants Style </h5>
+                                                            <a class="dropdown-item"
+                                                                href="product-rectangle.html">Variant Rectangle</a>
+                                                            <a class="dropdown-item" href="product-circle.html">Variant
+                                                                Circle <label class="menu-label">New</label></a>
+                                                            <a class="dropdown-item"
+                                                                href="product-color-image.html">Variant Image
+                                                                Swatch</a>
+                                                            <a class="dropdown-item" href="product-color.html">Variant
+                                                                Color</a>
+                                                            <a class="dropdown-item" href="product-radio.html">Variant
+                                                                Radio Button</a>
+                                                            <a class="dropdown-item"
+                                                                href="product-dropdown.html">Variant Dropdown</a>
+                                                            <h5 class="custom-mt dropdown-header">Product Features
+                                                            </h5>
+                                                            <a class="dropdown-item"
+                                                                href="product-left-thumbnail.html">Sticky
+                                                                Checkout</a>
+                                                            <a class="dropdown-item" href="product-dynamic.html">Dynamic
+                                                                Checkout</a>
+                                                            <a class="dropdown-item" href="product-sticky.html">Secure
+                                                                Checkout</a>
+                                                            <a class="dropdown-item" href="product-bundle.html">Active
+                                                                Product view</a>
+                                                            <a class="dropdown-item" href="product-bundle.html">
+                                                                Active
+                                                                Last Orders
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-3">
+                                                        <div class="dropdown-column m-0">
+                                                            <h5 class="dropdown-header">
+                                                                Product Features </h5>
+                                                            <a class="dropdown-item" href="product-image.html">Product
+                                                                Simple</a>
+                                                            <a class="dropdown-item" href="product-rectangle.html">
+                                                                Product Classified <label class="menu-label">New</label>
+                                                            </a>
+                                                            <a class="dropdown-item" href="product-size-chart.html">Size
+                                                                Chart <label class="menu-label">New</label></a>
+                                                            <a class="dropdown-item"
+                                                                href="product-size-chart.html">Delivery &
+                                                                Return</a>
+                                                            <a class="dropdown-item"
+                                                                href="product-size-chart.html">Product Review</a>
+                                                            <a class="dropdown-item" href="product-expert.html">Ask
+                                                                an Expert</a>
+                                                            <h5 class="custom-mt dropdown-header">Product Features
+                                                            </h5>
+                                                            <a class="dropdown-item"
+                                                                href="product-bottom-thumbnail.html">Product
+                                                                Tags</a>
+                                                            <a class="dropdown-item" href="product-image.html">Store
+                                                                Information</a>
+                                                            <a class="dropdown-item" href="product-image.html">Social
+                                                                Share <label
+                                                                    class="menu-label warning-label">Hot</label>
+                                                            </a>
+                                                            <a class="dropdown-item"
+                                                                href="product-left-thumbnail.html">Related Products
+                                                                <label class="menu-label warning-label">Hot</label>
+                                                            </a>
+                                                            <a class="dropdown-item"
+                                                                href="product-right-thumbnail.html">Wishlist &
+                                                                Compare</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-3 d-xl-block d-none">
+                                                        <div class="dropdown-column m-0">
+                                                            <div class="menu-img-banner">
+                                                                <a class="text-title" href="product-circle.html">
+                                                                    <img src="assets/images/mega-menu.png"
+                                                                        alt="banner">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item dropdown dropdown-mega">
+                                            <a class="nav-link dropdown-toggle ps-xl-2 ps-0 nav-link-two" href="javascript:void(0)"
+                                                data-bs-toggle="dropdown">Mega Menu</a>
+
+                                            <div class="dropdown-menu dropdown-menu-2 dropdown-menu-left">
+                                                <div class="row">
+                                                    <div class="dropdown-column col-xl-3">
+                                                        <h5 class="dropdown-header">Daily Vegetables</h5>
+                                                        <a class="dropdown-item" href="shop.html">Beans &
+                                                            Brinjals</a>
+
+                                                        <a class="dropdown-item" href="shop.html">Broccoli
+                                                            & Cauliflower</a>
+
+                                                        <a href="shop.html" class="dropdown-item">Chilies,
+                                                            Garlic, Lemon & Ginger</a>
+
+                                                        <a class="dropdown-item" href="shop.html">Cut
+                                                            Vegetables & Salads</a>
+
+                                                        <a class="dropdown-item" href="shop.html">Gourd,
+                                                            Cucumber & Pumpkin</a>
+
+                                                        <a class="dropdown-item" href="shop.html">Herbs &
+                                                            Sprouts</a>
+
+                                                        <a href="demo-personal-portfolio.html"
+                                                            class="dropdown-item">Lettuce
+                                                            & Leafy</a>
+                                                    </div>
+
+                                                    <div class="dropdown-column col-xl-3">
+                                                        <h5 class="dropdown-header">Baby Tender</h5>
+                                                        <a class="dropdown-item" href="shop.html">Beans &
+                                                            Brinjals</a>
+
+                                                        <a class="dropdown-item" href="shop.html">Broccoli
+                                                            & Cauliflower</a>
+
+                                                        <a class="dropdown-item" href="shop.html">Chilies,
+                                                            Garlic, Lemon & Ginger</a>
+
+                                                        <a class="dropdown-item" href="shop.html">Cut
+                                                            Vegetables & Salads</a>
+
+                                                        <a class="dropdown-item" href="shop.html">Gourd,
+                                                            Cucumber & Pumpkin</a>
+
+                                                        <a class="dropdown-item" href="shop.html">Onions,
+                                                            Potatoes & Tomatoes</a>
+
+                                                        <a href="shop.html" class="dropdown-item">Peas &
+                                                            Corn</a>
+                                                    </div>
+
+                                                    <div class="dropdown-column col-xl-3">
+                                                        <h5 class="dropdown-header">Exotic Vegetables</h5>
+                                                        <a class="dropdown-item" href="shop.html">Asparagus
+                                                            & Artichokes</a>
+
+                                                        <a class="dropdown-item" href="shop.html">Avocados
+                                                            & Peppers</a>
+
+                                                        <a class="dropdown-item" href="shop.html">Broccoli
+                                                            & Zucchini</a>
+
+                                                        <a class="dropdown-item" href="shop.html">Celery,
+                                                            Fennel & Leeks</a>
+
+                                                        <a class="dropdown-item" href="shop.html">Chilies &
+                                                            Lime</a>
+                                                    </div>
+
+                                                    <div class="dropdown-column dropdown-column-img col-3"></div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle " href="javascript:void(0)"
+                                                >Blog</a>
+                                        </li>
+
+                                        <li class="nav-item dropdown new-nav-item">
+                                            <label class="new-dropdown">New</label>
+                                            <a class="nav-link dropdown-toggle nav-link-two" href="javascript:void(0)"
+                                                data-bs-toggle="dropdown">Pages</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="sub-dropdown-hover">
+                                                    <a class="dropdown-item" href="javascript:void(0)">Email
+                                                        Template <span class="new-text"><i
+                                                                class="fa-solid fa-bolt-lightning"></i></span></a>
+                                                    <ul class="sub-menu">
+                                                        <li>
+                                                            <a
+                                                                href="/fastkart/email-templete/abandonment-email.html">Abandonment</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/fastkart/email-templete/offer-template.html">Offer
+                                                                Template</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/fastkart/email-templete/order-success.html">Order
+                                                                Success</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/fastkart/email-templete/reset-password.html">Reset
+                                                                Password</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/fastkart/email-templete/welcome.html">Welcome
+                                                                template</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-dropdown-hover">
+                                                    <a class="dropdown-item" href="javascript:void(0)">Invoice
+                                                        Template <span class="new-text"><i
+                                                                class="fa-solid fa-bolt-lightning"></i></span></a>
+                                                    <ul class="sub-menu">
+                                                        <li>
+                                                            <a href="/fastkart/invoice/invoice-1.html">Invoice 1</a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="/fastkart/invoice/invoice-2.html">Invoice 2</a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="/fastkart/invoice/invoice-3.html">Invoice 3</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="404.html">404</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="about-us.html">About Us</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="cart.html">Cart</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="contact-us.html">Contact</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="checkout.html">Checkout</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="coming-soon.html">Coming Soon</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="compare.html">Compare</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="faq.html">Faq</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="order-success.html">Order
+                                                        Success</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="order-tracking.html">Order
+                                                        Tracking</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="otp.html">OTP</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="search.html">Search</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="user-dashboard.html">User
+                                                        Dashboard</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="wishlist.html">Wishlist</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle nav-link-two" href="javascript:void(0)"
+                                                data-bs-toggle="dropdown">Seller</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item" href="seller-become.html">Become a
+                                                        Seller</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="seller-dashboard.html">Seller
+                                                        Dashboard</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="seller-detail.html">Seller Detail</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="seller-detail-2.html">Seller Detail
+                                                        2</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="seller-grid.html">Seller Grid</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="seller-grid-2.html">Seller Grid 2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rightside-menu position-static d-xl-flex d-none">
+                            <ul class="option-list-2">
+                                <li>
+                                    <a href="javascript:void(0)" class="header-icon search-box search-icon">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="compare.html" class="header-icon">
+                                        <small class="badge-number badge-light">2</small>
+                                        <i class="iconly-Swap icli"></i>
+                                    </a>
+                                </li>
+                                <li class="onhover-dropdown">
+                                    <a href="javascript:void(0)" class="header-icon swap-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </a>
+
+                                    <div class="onhover-div">
+                                        <ul class="cart-list">
+                                            <li>
+                                                <div class="drop-cart">
+                                                    <a href="product-left-thumbnail.html" class="drop-image">
+                                                        <img src="assets/images/vegetable/product/1.png"
+                                                            class="blur-up lazyload" alt="">
+                                                    </a>
+
+                                                    <div class="drop-contain">
+                                                        <a href="product-left-thumbnail.html">
+                                                            <h5>Fantasy Crunchy Choco Chip Cookies</h5>
+                                                        </a>
+                                                        <h6><span>1 x</span> $80.58</h6>
+                                                        <button class="close-button">
+                                                            <i class="fa-solid fa-xmark"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="drop-cart">
+                                                    <a href="product-left-thumbnail.html" class="drop-image">
+                                                        <img src="assets/images/vegetable/product/2.png"
+                                                            class="blur-up lazyload" alt="">
+                                                    </a>
+
+                                                    <div class="drop-contain">
+                                                        <a href="product-left-thumbnail.html">
+                                                            <h5>Peanut Butter Bite Premium Butter Cookies 600 g</h5>
+                                                        </a>
+                                                        <h6><span>1 x</span> $25.68</h6>
+                                                        <button class="close-button">
+                                                            <i class="fa-solid fa-xmark"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                        <div class="price-box">
+                                            <h5>Price :</h5>
+                                            <h4 class="theme-color fw-bold">$106.58</h4>
+                                        </div>
+
+                                        <div class="button-group">
+                                            <a href="cart.html" class="btn btn-sm cart-button">View Cart</a>
+                                            <a href="checkout.html" class="btn btn-sm cart-button theme-bg-color
+                                                    text-white">Checkout</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="cart.html" class="header-icon bag-icon">
+                                        <small class="badge-number badge-light">2</small>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="user-dashboard.html" class="user-box">
+                                <span class="header-icon">
+                                    <i class="fa-regular fa-user"></i>
+                                </span>
+                                <div class="user-name">
+                                    <h6 class="text-content">My Account</h6>
+                                    <h4 class="mt-1">Jennifer V. Ward</h4>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="user-box d-xl-none d-block" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#primaryMenu">
+                                <span class="header-icon">
+                                    <i class="fa-solid fa-bars"></i>
+                                </span>
+                            </a>
+
+                            <a target="_blank" class="btn mobile-app d-xxl-flex d-none"
+                                href="https://play.google.com/store/games?utm_source=apac_med&amp;utm_medium=hasem&amp;utm_content=Oct0121&amp;utm_campaign=Evergreen&amp;pcampaignid=MKT-EDR-apac-in-1003227-med-hasem-py-Evergreen-Oct0121-Text_Search_BKWS-BKWS%7CONSEM_kwid_43700065205026415_creativeid_535350509927_device_c&amp;gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2H1K3VqdJFHodt0-XSnQzcuOuTP-s2aPBE6lG0QVOf8D5cJBsB-DxQaAkNAEALw_wcB&amp;gclsrc=aw.ds">
+                                <div class="mobile-image">
+                                    <img src="assets/images/icon/mobile.png" class="img-fluid blur-up lazyload"
+                                        alt="">
+                                </div>
+
+                                <div class="mobile-name">
+                                    <h4>Download App</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- mobile fix menu start -->
+    <div class="mobile-menu d-md-none d-block mobile-cart">
+        <ul>
+            <li class="active">
+                <a href="index.html">
+                    <i class="iconly-Home icli"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+
+            <li class="mobile-category">
+                <a href="javascript:void(0)">
+                    <i class="iconly-Category icli js-link"></i>
+                    <span>Category</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="search.html" class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Search</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="wishlist.html" class="notifi-wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>My Wish</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="cart.html">
+                    <i class="iconly-Bag-2 icli fly-cate"></i>
+                    <span>Cart</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- mobile fix menu end -->
+
+    <!-- Breadcrumb Section Start -->
+    <section class="breadcrumb-section pt-0">
+        <div class="container-fluid-lg">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb-contain">
+                        <h2>User Dashboard</h2>
+                        <nav>
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="index.html">
+                                        <i class="fa-solid fa-house"></i>
+                                    </a>
+                                </li>
+                                <li class="breadcrumb-item active">User Dashboard</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- User Dashboard Section Start -->
+    <section class="user-dashboard-section section-b-space">
+        <div class="container-fluid-lg">
+            <div class="row">
+                <div class="col-xxl-3 col-lg-4">
+                    <div class="dashboard-left-sidebar">
+                        <div class="close-button d-flex d-lg-none">
+                            <button class="close-sidebar">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <div class="profile-box">
+                            <div class="cover-image">
+                                <img src="../assets/images/inner-page/cover-img.jpg" class="img-fluid blur-up lazyload"
+                                    alt="">
+                            </div>
+
+                            <div class="profile-contain">
+                                <div class="profile-image">
+                                    <div class="position-relative">
+                                        <img src="../assets/images/vendor-page/logo.png"
+                                            class="blur-up lazyload update_img" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="profile-name">
+                                    <h3>Joshua D. Bass</h3>
+                                    <h6 class="text-content">joshuadbass@rhyta.com</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="nav nav-pills user-nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a href="#pills-tabContent" class="nav-link active" id="pills-dashboard-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-dashboard" role="tab"><i
+                                        data-feather="home"></i>
+                                    DashBoard</a>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-product-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-product" type="button" role="tab"><i
+                                        data-feather="shopping-bag"></i>Products</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-order-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-order" type="button" role="tab"><i
+                                        data-feather="shopping-bag"></i>Order</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"><i data-feather="user"></i>
+                                    Profile</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-security-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-security" type="button" role="tab"><i
+                                        data-feather="settings"></i>
+                                    Setting</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-out-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-out" type="button" role="tab"><i data-feather="log-out"></i>
+                                    Log Out</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xxl-9 col-lg-8">
+                    <button class="btn left-dashboard-show btn-animation btn-md fw-bold d-block mb-4 d-lg-none">Show
+                        Menu</button>
+                    <div class="dashboard-right-sidebar">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-dashboard" role="tabpanel">
+                                <div class="dashboard-home">
+                                    <div class="title">
+                                        <h2>My Dashboard</h2>
+                                        <span class="title-leaf">
+                                            <svg class="icon-width bg-gray">
+                                                <use xlink:href="https://themes.pixelstrap.com/fastkart/assets/svg/leaf.svg#leaf"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+
+                                    <div class="dashboard-user-name">
+                                        <h6 class="text-content">Hello, <b class="text-title">Vicki E. Pope</b></h6>
+                                        <p class="text-content">From your My Account Dashboard you have the ability to
+                                            view a snapshot of your recent account activity and update your account
+                                            information. Select a link below to view or edit information.</p>
+                                    </div>
+
+                                    <div class="total-box">
+                                        <div class="row g-sm-4 g-3">
+                                            <div class="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
+                                                <div class="total-contain">
+                                                    <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/order.svg"
+                                                        class="img-1 blur-up lazyload" alt="">
+                                                    <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/order.svg" class="blur-up lazyload"
+                                                        alt="">
+                                                    <div class="total-detail">
+                                                        <h5>Total Products</h5>
+                                                        <h3>25</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
+                                                <div class="total-contain">
+                                                    <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/pending.svg"
+                                                        class="img-1 blur-up lazyload" alt="">
+                                                    <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/pending.svg" class="blur-up lazyload"
+                                                        alt="">
+                                                    <div class="total-detail">
+                                                        <h5>Total Sales</h5>
+                                                        <h3>12550</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
+                                                <div class="total-contain">
+                                                    <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/wishlist.svg"
+                                                        class="img-1 blur-up lazyload" alt="">
+                                                    <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/wishlist.svg"
+                                                        class="blur-up lazyload" alt="">
+                                                    <div class="total-detail">
+                                                        <h5>Order Pending</h5>
+                                                        <h3>36</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-4">
+                                        <div class="col-xxl-6">
+                                            <div class="dashboard-bg-box">
+                                                <div id="chart"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xxl-6">
+                                            <div class="dashboard-bg-box">
+                                                <div id="sale"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xxl-6">
+                                            <div class="table-responsive dashboard-bg-box">
+                                                <div class="dashboard-title mb-4">
+                                                    <h3>Trending Products</h3>
+                                                </div>
+
+                                                <table class="table product-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Images</th>
+                                                            <th scope="col">Product Name</th>
+                                                            <th scope="col">Price</th>
+                                                            <th scope="col">Sales</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="product-image">
+                                                                <img src="../assets/images/vegetable/product/1.png"
+                                                                    class="img-fluid" alt="">
+                                                            </td>
+                                                            <td>
+                                                                <h6>Fantasy Crunchy Choco Chip Cookies</h6>
+                                                            </td>
+                                                            <td>
+                                                                <h6>$25.69</h6>
+                                                            </td>
+                                                            <td>
+                                                                <h6>152</h6>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="product-image">
+                                                                <img src="../assets/images/vegetable/product/2.png"
+                                                                    class="img-fluid" alt="">
+                                                            </td>
+                                                            <td>
+                                                                <h6>Peanut Butter Bite Premium Butter Cookies 600 g</h6>
+                                                            </td>
+                                                            <td>
+                                                                <h6>$35.36</h6>
+                                                            </td>
+                                                            <td>
+                                                                <h6>34</h6>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="product-image">
+                                                                <img src="../assets/images/vegetable/product/3.png"
+                                                                    class="img-fluid" alt="">
+                                                            </td>
+                                                            <td>
+                                                                <h6>Yumitos Chilli Sprinkled Potato Chips 100 g</h6>
+                                                            </td>
+                                                            <td>
+                                                                <h6>$78.55</h6>
+                                                            </td>
+                                                            <td>
+                                                                <h6>78</h6>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="product-image">
+                                                                <img src="../assets/images/vegetable/product/4.png"
+                                                                    class="img-fluid" alt="">
+                                                            </td>
+                                                            <td>
+                                                                <h6>healthy Long Life Toned Milk 1 L</h6>
+                                                            </td>
+                                                            <td>
+                                                                <h6>$32.98</h6>
+                                                            </td>
+                                                            <td>
+                                                                <h6>135</h6>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xxl-6">
+                                            <div class="order-tab dashboard-bg-box">
+                                                <div class="dashboard-title mb-4">
+                                                    <h3>Recent Order</h3>
+                                                </div>
+
+                                                <div class="table-responsive">
+                                                    <table class="table order-table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">Order ID</th>
+                                                                <th scope="col">Product Name</th>
+                                                                <th scope="col">Status</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="product-image">#254834</td>
+                                                                <td>
+                                                                    <h6>Choco Chip Cookies</h6>
+                                                                </td>
+                                                                <td>
+                                                                    <label class="success">Shipped</label>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="product-image">#355678</td>
+                                                                <td>
+                                                                    <h6>Premium Butter Cookies</h6>
+                                                                </td>
+                                                                <td>
+                                                                    <label class="danger">Pending</label>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="product-image">#647536</td>
+                                                                <td>
+                                                                    <h6>Sprinkled Potato Chips</h6>
+                                                                </td>
+                                                                <td>
+                                                                    <label class="success">Shipped</label>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="product-image">#125689</td>
+                                                                <td>
+                                                                    <h6>Milk 1 L</h6>
+                                                                </td>
+                                                                <td>
+                                                                    <label class="danger">Pending</label>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="product-image">#215487</td>
+                                                                <td>
+                                                                    <h6>Raw Mutton Leg</h6>
+                                                                </td>
+                                                                <td>
+                                                                    <label class="danger">Pending</label>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="product-image">#365474</td>
+                                                                <td>
+                                                                    <h6>Instant Coffee</h6>
+                                                                </td>
+                                                                <td>
+                                                                    <label class="success">Shipped</label>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="product-image">#368415</td>
+                                                                <td>
+                                                                    <h6>Jowar Stick and Jowar Chips</h6>
+                                                                </td>
+                                                                <td>
+                                                                    <label class="danger">Pending</label>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-product" role="tabpanel">
+                                <div class="product-tab">
+                                    <div class="title">
+                                        <h2>All Product</h2>
+                                        <span class="title-leaf">
+                                            <svg class="icon-width bg-gray">
+                                                <use xlink:href="https://themes.pixelstrap.com/fastkart/assets/svg/leaf.svg#leaf"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+
+                                    <div class="table-responsive dashboard-bg-box">
+                                        <table class="table product-table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Images</th>
+                                                    <th scope="col">Product Name</th>
+                                                    <th scope="col">Price</th>
+                                                    <th scope="col">Stock</th>
+                                                    <th scope="col">Sales</th>
+                                                    <th scope="col">Edit / Delete</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="product-image">
+                                                        <img src="../assets/images/vegetable/product/1.png"
+                                                            class="img-fluid" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <h6>Fantasy Crunchy Choco Chip Cookies</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6 class="theme-color fw-bold">$25.69</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>63</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>152</h6>
+                                                    </td>
+                                                    <td class="edit-delete">
+                                                        <i data-feather="edit" class="edit"></i>
+                                                        <i data-feather="trash-2" class="delete"></i>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="product-image">
+                                                        <img src="../assets/images/vegetable/product/2.png"
+                                                            class="img-fluid" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <h6>Peanut Butter Bite Premium Butter Cookies 600 g</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6 class="theme-color fw-bold">$35.36</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>14</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>34</h6>
+                                                    </td>
+                                                    <td class="edit-delete">
+                                                        <i data-feather="edit" class="edit"></i>
+                                                        <i data-feather="trash-2" class="delete"></i>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="product-image">
+                                                        <img src="../assets/images/vegetable/product/3.png"
+                                                            class="img-fluid" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <h6>Yumitos Chilli Sprinkled Potato Chips 100 g</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6 class="theme-color fw-bold">$78.55</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>55</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>78</h6>
+                                                    </td>
+                                                    <td class="edit-delete">
+                                                        <i data-feather="edit" class="edit"></i>
+                                                        <i data-feather="trash-2" class="delete"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="product-image">
+                                                        <img src="../assets/images/vegetable/product/4.png"
+                                                            class="img-fluid" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <h6>healthy Long Life Toned Milk 1 L</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6 class="theme-color fw-bold">$32.98</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>69</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>135</h6>
+                                                    </td>
+                                                    <td class="edit-delete">
+                                                        <i data-feather="edit" class="edit"></i>
+                                                        <i data-feather="trash-2" class="delete"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="product-image">
+                                                        <img src="../assets/images/vegetable/product/5.png"
+                                                            class="img-fluid" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <h6>Raw Mutton Leg, Packaging 5 Kg</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6 class="theme-color fw-bold">$36.98</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>35</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>154</h6>
+                                                    </td>
+                                                    <td class="edit-delete">
+                                                        <i data-feather="edit" class="edit"></i>
+                                                        <i data-feather="trash-2" class="delete"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="product-image">
+                                                        <img src="../assets/images/vegetable/product/6.png"
+                                                            class="img-fluid" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <h6>Cold Brew Coffee Instant Coffee 50 g</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6 class="theme-color fw-bold">$36.58</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>69</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>168</h6>
+                                                    </td>
+                                                    <td class="edit-delete">
+                                                        <i data-feather="edit" class="edit"></i>
+                                                        <i data-feather="trash-2" class="delete"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="product-image">
+                                                        <img src="../assets/images/vegetable/product/7.png"
+                                                            class="img-fluid" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <h6>SnackAmor Combo Pack of Jowar Stick and Jowar Chips</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6 class="theme-color fw-bold">$25.69</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>63</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>152</h6>
+                                                    </td>
+                                                    <td class="edit-delete">
+                                                        <i data-feather="edit" class="edit"></i>
+                                                        <i data-feather="trash-2" class="delete"></i>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <nav class="custom-pagination">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item disabled">
+                                                    <a class="page-link" href="javascript:void(0)" tabindex="-1">
+                                                        <i class="fa-solid fa-angles-left"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item active">
+                                                    <a class="page-link" href="javascript:void(0)">1</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="javascript:void(0)">2</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="javascript:void(0)">3</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="javascript:void(0)">
+                                                        <i class="fa-solid fa-angles-right"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-order" role="tabpanel">
+                                <div class="dashboard-order">
+                                    <div class="title">
+                                        <h2>All Order</h2>
+                                        <span class="title-leaf title-leaf-gray">
+                                            <svg class="icon-width bg-gray">
+                                                <use xlink:href="https://themes.pixelstrap.com/fastkart/assets/svg/leaf.svg#leaf"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+
+                                    <div class="order-tab dashboard-bg-box">
+                                        <div class="table-responsive">
+                                            <table class="table order-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Order ID</th>
+                                                        <th scope="col">Product Name</th>
+                                                        <th scope="col">Status</th>
+                                                        <th scope="col">Price</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="product-image">#254834</td>
+                                                        <td>
+                                                            <h6>Fantasy Crunchy Choco Chip Cookies</h6>
+                                                        </td>
+                                                        <td>
+                                                            <label class="success">Shipped</label>
+                                                        </td>
+                                                        <td>
+                                                            <h6>$25.69</h6>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="product-image">#355678</td>
+                                                        <td>
+                                                            <h6>Peanut Butter Bite Premium Butter Cookies 600 g</h6>
+                                                        </td>
+                                                        <td>
+                                                            <label class="danger">Pending</label>
+                                                        </td>
+                                                        <td>
+                                                            <h6>$25.69</h6>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="product-image">#647536</td>
+                                                        <td>
+                                                            <h6>Yumitos Chilli Sprinkled Potato Chips 100 g</h6>
+                                                        </td>
+                                                        <td>
+                                                            <label class="success">Shipped</label>
+                                                        </td>
+                                                        <td>
+                                                            <h6>$25.69</h6>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="product-image">#125689</td>
+                                                        <td>
+                                                            <h6>healthy Long Life Toned Milk 1 L</h6>
+                                                        </td>
+                                                        <td>
+                                                            <label class="danger">Pending</label>
+                                                        </td>
+                                                        <td>
+                                                            <h6>$25.69</h6>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="product-image">#215487</td>
+                                                        <td>
+                                                            <h6>Raw Mutton Leg, Packaging 5 Kg</h6>
+                                                        </td>
+                                                        <td>
+                                                            <label class="danger">Pending</label>
+                                                        </td>
+                                                        <td>
+                                                            <h6>$25.69</h6>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="product-image">#365474</td>
+                                                        <td>
+                                                            <h6>Cold Brew Coffee Instant Coffee 50 g</h6>
+                                                        </td>
+                                                        <td>
+                                                            <label class="success">Shipped</label>
+                                                        </td>
+                                                        <td>
+                                                            <h6>$25.69</h6>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="product-image">#368415</td>
+                                                        <td>
+                                                            <h6>SnackAmor Combo Pack of Jowar Stick and Jowar Chips</h6>
+                                                        </td>
+                                                        <td>
+                                                            <label class="danger">Pending</label>
+                                                        </td>
+                                                        <td>
+                                                            <h6>$25.69</h6>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <nav class="custom-pagination">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item disabled">
+                                                    <a class="page-link" href="javascript:void(0)" tabindex="-1">
+                                                        <i class="fa-solid fa-angles-left"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item active">
+                                                    <a class="page-link" href="javascript:void(0)">1</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="javascript:void(0)">2</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="javascript:void(0)">3</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="javascript:void(0)">
+                                                        <i class="fa-solid fa-angles-right"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel">
+                                <div class="dashboard-profile">
+                                    <div class="title">
+                                        <h2>My Profile</h2>
+                                        <span class="title-leaf">
+                                            <svg class="icon-width bg-gray">
+                                                <use xlink:href="https://themes.pixelstrap.com/fastkart/assets/svg/leaf.svg#leaf"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+
+                                    <div class="profile-tab dashboard-bg-box">
+                                        <div class="dashboard-title dashboard-flex">
+                                            <h3>Profile Name</h3>
+                                            <button class="btn btn-sm theme-bg-color text-white" data-bs-toggle="modal"
+                                                data-bs-target="#edit-profile">Edit Profile</button>
+                                        </div>
+
+                                        <ul>
+                                            <li>
+                                                <h5>Company Name :</h5>
+                                                <h5>Grocery Store</h5>
+                                            </li>
+                                            <li>
+                                                <h5>Email Address :</h5>
+                                                <h5>joshuadbass@rhyta.com</h5>
+                                            </li>
+                                            <li>
+                                                <h5>Country / Region :</h5>
+                                                <h5>107 Veltri Drive</h5>
+                                            </li>
+
+                                            <li>
+                                                <h5>Year Established :</h5>
+                                                <h5>2022</h5>
+                                            </li>
+
+                                            <li>
+                                                <h5>Total Employees :</h5>
+                                                <h5>154 - 360 People</h5>
+                                            </li>
+                                            <li>
+                                                <h5>Category :</h5>
+                                                <h5>Grocery</h5>
+                                            </li>
+
+                                            <li>
+                                                <h5>Street Address :</h5>
+                                                <h5>234 High St</h5>
+                                            </li>
+
+                                            <li>
+                                                <h5>City / State :</h5>
+                                                <h5>107 Veltri Drive</h5>
+                                            </li>
+
+                                            <li>
+                                                <h5>Zip :</h5>
+                                                <h5>B23 6SN</h5>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-security" role="tabpanel">
+                                <div class="dashboard-privacy">
+                                    <div class="title">
+                                        <h2>My Setting</h2>
+                                        <span class="title-leaf">
+                                            <svg class="icon-width bg-gray">
+                                                <use xlink:href="https://themes.pixelstrap.com/fastkart/assets/svg/leaf.svg#leaf"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+
+                                    <div class="dashboard-bg-box">
+                                        <div class="dashboard-title mb-4">
+                                            <h3>Notifications</h3>
+                                        </div>
+
+                                        <div class="privacy-box">
+                                            <div
+                                                class="form-check custom-form-check custom-form-check-2 d-flex align-items-center">
+                                                <input class="form-check-input" type="radio" id="desktop" name="desktop"
+                                                    checked>
+                                                <label class="form-check-label ms-2" for="desktop">Show
+                                                    Desktop Notifications</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="privacy-box">
+                                            <div
+                                                class="form-check custom-form-check custom-form-check-2 d-flex align-items-center">
+                                                <input class="form-check-input" type="radio" id="enable" name="desktop">
+                                                <label class="form-check-label ms-2" for="enable">Enable
+                                                    Notifications</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="privacy-box">
+                                            <div
+                                                class="form-check custom-form-check custom-form-check-2 d-flex align-items-center">
+                                                <input class="form-check-input" type="radio" id="activity"
+                                                    name="desktop">
+                                                <label class="form-check-label ms-2" for="activity">Get
+                                                    notification for my own activity</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="privacy-box">
+                                            <div
+                                                class="form-check custom-form-check custom-form-check-2 d-flex align-items-center">
+                                                <input class="form-check-input" type="radio" id="dnd" name="desktop">
+                                                <label class="form-check-label ms-2" for="dnd">DND</label>
+                                            </div>
+                                        </div>
+
+                                        <button class="btn theme-bg-color btn-md fw-bold mt-4 text-white">Save
+                                            Changes</button>
+                                    </div>
+
+                                    <div class="dashboard-bg-box">
+                                        <div class="dashboard-title mb-4">
+                                            <h3>Deactivate Account</h3>
+                                        </div>
+                                        <div class="privacy-box">
+                                            <div
+                                                class="form-check custom-form-check custom-form-check-2 d-flex align-items-center">
+                                                <input class="form-check-input" type="radio" id="concern"
+                                                    name="concern">
+                                                <label class="form-check-label ms-2" for="concern">I have a privacy
+                                                    concern</label>
+                                            </div>
+                                        </div>
+                                        <div class="privacy-box">
+                                            <div
+                                                class="form-check custom-form-check custom-form-check-2 d-flex align-items-center">
+                                                <input class="form-check-input" type="radio" id="temporary"
+                                                    name="concern">
+                                                <label class="form-check-label ms-2" for="temporary">This is
+                                                    temporary</label>
+                                            </div>
+                                        </div>
+                                        <div class="privacy-box">
+                                            <div
+                                                class="form-check custom-form-check custom-form-check-2 d-flex align-items-center">
+                                                <input class="form-check-input" type="radio" id="other" name="concern">
+                                                <label class="form-check-label ms-2" for="other">other</label>
+                                            </div>
+                                        </div>
+
+                                        <button class="btn theme-bg-color btn-md fw-bold mt-4 text-white">Deactivate
+                                            Account</button>
+                                    </div>
+
+                                    <div class="dashboard-bg-box">
+                                        <div class="dashboard-title mb-4">
+                                            <h3>Delete Account</h3>
+                                        </div>
+                                        <div class="privacy-box">
+                                            <div
+                                                class="form-check custom-form-check custom-form-check-2 d-flex align-items-center">
+                                                <input class="form-check-input" type="radio" id="usable" name="usable">
+                                                <label class="form-check-label ms-2" for="usable">No longer
+                                                    usable</label>
+                                            </div>
+                                        </div>
+                                        <div class="privacy-box">
+                                            <div
+                                                class="form-check custom-form-check custom-form-check-2 d-flex align-items-center">
+                                                <input class="form-check-input" type="radio" id="account" name="usable">
+                                                <label class="form-check-label ms-2" for="account">Want to switch on
+                                                    other
+                                                    account</label>
+                                            </div>
+                                        </div>
+                                        <div class="privacy-box">
+                                            <div
+                                                class="form-check custom-form-check custom-form-check-2 d-flex align-items-center">
+                                                <input class="form-check-input" type="radio" id="other-2" name="usable">
+                                                <label class="form-check-label ms-2" for="other-2">Other</label>
+                                            </div>
+                                        </div>
+
+                                        <button class="btn theme-bg-color btn-md fw-bold mt-4 text-white">Delete My
+                                            Account</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- User Dashboard Section End -->
+
+    <!-- Service Section Start -->
+    <section class="service-section section-b-space">
+        <div class="container-fluid-lg">
+            <div class="row g-3 row-cols-xxl-5 row-cols-lg-3 row-cols-md-2">
+                <div>
+                    <div class="service-contain-2">
+                        <svg viewBox="0 0 800 680" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M743.997 388.341L723.28 305.473C728.944 304.27 733.194 299.245 733.194 293.225V279.864C733.194 250.855 709.592 227.255 680.584 227.255H586.222V199.697C586.222 185.422 574.609 173.809 560.334 173.809H384.875L491.5 131.159C497.923 128.591 501.047 121.3 498.478 114.877C495.909 108.455 488.623 105.328 482.195 107.898L394.892 142.819C421.495 125.75 447.816 106.964 457.836 93.8266C477.344 68.25 472.403 31.5719 446.827 12.0641C421.25 -7.44531 384.572 -2.50312 365.064 23.0734C350.811 41.7641 332.005 94.2813 319.833 131.289C307.661 94.2844 288.855 41.7641 274.602 23.0734C255.095 -2.50312 218.416 -7.44219 192.839 12.0641C167.263 31.5703 162.323 68.2484 181.83 93.8266C191.85 106.966 218.169 125.75 244.773 142.819L157.47 107.898C151.044 105.325 143.756 108.453 141.188 114.877C138.617 121.3 141.742 128.591 148.166 131.159L254.791 173.809H79.3312C65.0562 173.809 53.4437 185.422 53.4437 199.697V426.837C53.4437 433.755 59.0516 439.364 65.9703 439.364C72.8875 439.364 78.4969 433.756 78.4969 426.837V199.697C78.4969 199.236 78.8703 198.863 79.3312 198.863H560.333C560.794 198.863 561.167 199.236 561.167 199.697V426.841C561.167 433.758 566.775 439.367 573.694 439.367C580.611 439.367 586.22 433.759 586.22 426.841V412.641H733.98C733.994 412.641 734.005 412.644 734.019 412.644C734.033 412.644 734.045 412.642 734.059 412.642C752.241 412.656 767.678 424.591 772.978 441.034H734.028C727.111 441.034 721.502 446.642 721.502 453.561V480.283C721.502 501.925 739.108 519.531 760.75 519.531H774.947V574.645H742.194C731.434 543.58 701.902 521.2 667.222 521.2C632.542 521.2 603.008 543.578 592.25 574.645H586.219V480.281C586.219 473.364 580.611 467.755 573.692 467.755C566.775 467.755 561.166 473.363 561.166 480.281V574.644H301.277C290.517 543.578 260.984 521.198 226.305 521.198C191.625 521.198 162.091 543.577 151.333 574.644H79.3312C78.8703 574.644 78.4969 574.27 78.4969 573.809V546.252H132.777C139.694 546.252 145.303 540.644 145.303 533.725C145.303 526.806 139.695 521.198 132.777 521.198H12.5266C5.60938 521.198 0 526.806 0 533.725C0 540.644 5.60781 546.252 12.5266 546.252H53.4453V573.809C53.4453 588.084 65.0578 599.697 79.3328 599.697H146.995C146.992 599.975 146.973 600.252 146.973 600.531C146.973 644.273 182.563 679.862 226.305 679.862C270.047 679.862 305.636 644.273 305.636 600.531C305.636 600.25 305.617 599.975 305.614 599.697H587.911C587.908 599.975 587.889 600.252 587.889 600.531C587.889 644.273 623.478 679.862 667.22 679.862C710.962 679.862 746.552 644.273 746.552 600.531C746.552 600.25 746.533 599.975 746.53 599.697H787.472C794.389 599.697 799.998 594.089 799.998 587.17V453.559C800 420.569 775.661 393.159 743.997 388.341ZM270.156 129.155C220.745 98.45 206.089 84.3234 201.75 78.6328C190.62 64.0406 193.439 43.1141 208.033 31.9844C214.048 27.3969 221.139 25.1797 228.178 25.1797C238.212 25.1797 248.141 29.6891 254.683 38.2672C266.8 54.1547 285.777 107.628 298.305 146.161C289.85 141.183 280.131 135.356 270.156 129.155ZM341.364 146.159C353.892 107.628 372.869 54.1563 384.984 38.2656C396.114 23.6734 417.041 20.8563 431.633 31.9844C446.227 43.1141 449.044 64.0406 437.916 78.6328C433.577 84.3219 418.92 98.45 369.513 129.153C359.539 135.353 349.82 141.181 341.364 146.159ZM586.222 252.305H680.584C695.78 252.305 708.142 264.667 708.142 279.862V280.697H586.222V252.305ZM586.222 387.587V305.75H697.527L717.986 387.587H586.222ZM226.305 654.811C196.375 654.811 172.025 630.461 172.025 600.531C172.025 570.602 196.375 546.252 226.305 546.252C256.234 546.252 280.584 570.602 280.584 600.531C280.584 630.461 256.234 654.811 226.305 654.811ZM667.223 654.811C637.294 654.811 612.944 630.461 612.944 600.531C612.944 570.602 637.294 546.252 667.223 546.252C697.153 546.252 721.503 570.602 721.503 600.531C721.503 630.461 697.153 654.811 667.223 654.811ZM774.948 494.477H760.752C752.923 494.477 746.555 488.108 746.555 480.28V466.083H774.947V494.477H774.948Z" fill="black"/>
+                            <path d="M226.305 574.644C212.03 574.644 200.417 586.256 200.417 600.531C200.417 614.806 212.03 626.419 226.305 626.419C240.58 626.419 252.192 614.806 252.192 600.531C252.192 586.256 240.58 574.644 226.305 574.644Z" />
+                            <path d="M667.223 574.644C652.948 574.644 641.336 586.256 641.336 600.531C641.336 614.806 652.948 626.419 667.223 626.419C681.498 626.419 693.111 614.806 693.111 600.531C693.111 586.256 681.498 574.644 667.223 574.644Z"/>
+                            <path d="M520.25 521.198H333.194C326.277 521.198 320.667 526.806 320.667 533.725C320.667 540.644 326.275 546.252 333.194 546.252H520.25C527.167 546.252 532.777 540.644 532.777 533.725C532.777 526.806 527.169 521.198 520.25 521.198Z"/>
+                            <path d="M199.583 467.755H39.2484C32.3312 467.755 26.7219 473.363 26.7219 480.281C26.7219 487.2 32.3297 492.808 39.2484 492.808H199.583C206.5 492.808 212.109 487.2 212.109 480.281C212.109 473.363 206.5 467.755 199.583 467.755Z" />
+                            <path d="M199.583 280.697H146.138C139.22 280.697 133.611 286.305 133.611 293.223V400.112C133.611 407.03 139.219 412.639 146.138 412.639C153.056 412.639 158.664 407.031 158.664 400.112V359.194H186.222C193.139 359.194 198.748 353.586 198.748 346.667C198.748 339.748 193.141 334.141 186.222 334.141H158.664V305.75H199.583C206.5 305.75 212.109 300.142 212.109 293.223C212.108 286.306 206.5 280.697 199.583 280.697Z" />
+                            <path d="M298.159 365.067C310.695 356.856 318.998 342.697 318.998 326.627C318.998 301.3 298.395 280.697 273.069 280.697H239.666C232.748 280.697 227.139 286.305 227.139 293.223V400.112C227.139 407.03 232.747 412.639 239.666 412.639C246.584 412.639 252.192 407.031 252.192 400.112V372.555H273.045L296.048 407.059C298.462 410.68 302.433 412.639 306.481 412.639C308.87 412.639 311.283 411.958 313.417 410.533C319.175 406.697 320.73 398.919 316.891 393.164L298.159 365.067ZM273.069 347.503H252.192V305.75H273.069C284.581 305.75 293.945 315.114 293.945 326.627C293.945 338.139 284.581 347.503 273.069 347.503Z"/>
+                            <path d="M400 387.587H359.081V359.153C359.358 359.172 359.634 359.195 359.916 359.195H386.638C393.555 359.195 399.164 353.587 399.164 346.669C399.164 339.75 393.556 334.142 386.638 334.142H359.916C359.633 334.142 359.358 334.166 359.081 334.184V305.75H400C406.917 305.75 412.527 300.142 412.527 293.223C412.527 286.306 406.919 280.697 400 280.697H346.555C339.638 280.697 334.028 286.305 334.028 293.223V400.112C334.028 407.03 339.636 412.639 346.555 412.639H400C406.917 412.639 412.527 407.031 412.527 400.112C412.527 393.194 406.917 387.587 400 387.587Z"/>
+                            <path d="M493.528 387.587H452.609V359.195H466.806C473.723 359.195 479.333 353.587 479.333 346.669C479.333 339.75 473.725 334.142 466.806 334.142H452.609V305.75H493.528C500.445 305.75 506.055 300.142 506.055 293.223C506.055 286.306 500.447 280.697 493.528 280.697H440.083C433.166 280.697 427.556 286.305 427.556 293.223V400.112C427.556 407.03 433.164 412.639 440.083 412.639H493.528C500.445 412.639 506.055 407.031 506.055 400.112C506.055 393.194 500.445 387.587 493.528 387.587Z"/>
+                        </svg>
+                            
+                        <div class="service-detail">
+                            <h3>Free Shipping</h3>
+                            <h6 class="text-content">Free Shipping world wide</h6>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="service-contain-2">
+                        <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2_32)">
+                            <path d="M273.227 461.084L253.091 480.629C250.248 483.391 248.645 487.183 248.645 491.145V499.486C248.645 507.58 255.209 514.145 263.306 514.145H383.544C391.651 514.145 398.21 507.58 398.21 499.486V488.69C398.21 480.596 391.651 474.028 383.544 474.028H317.109L318.94 472.344C362.36 430.512 393.091 397.586 393.091 354.714C393.091 320.437 370.815 285.85 321.028 285.85C299.294 285.85 278.009 292.825 261.089 305.483C255.595 309.605 253.687 316.992 256.516 323.258L260.214 331.436C262.01 335.413 265.475 338.384 269.689 339.54C273.877 340.697 278.397 339.916 281.971 337.42C292.851 329.822 304.05 325.967 315.27 325.967C337.105 325.967 348.173 336.823 348.173 358.086C347.881 386.899 323.981 412.766 273.227 461.084Z" fill="black"/>
+                            <path d="M492.381 289.421C491.99 289.386 491.595 289.37 491.204 289.37H486.727C481.932 289.37 477.448 291.712 474.708 295.633L384.911 424.14C383.191 426.603 382.27 429.535 382.27 432.539V442.84C382.27 450.937 388.83 457.502 396.927 457.502H478.916V499.486C478.916 507.58 485.476 514.145 493.573 514.145H507.573C515.665 514.145 522.237 507.58 522.237 499.486V457.502H536.691C544.788 457.502 551.355 450.937 551.355 442.84V433.32C551.355 425.228 544.788 418.661 536.691 418.661H522.237V304.032C522.237 295.94 515.665 289.373 507.573 289.373H493.573C493.172 289.373 492.771 289.388 492.381 289.421ZM478.916 418.661H434.644C445.892 402.33 465.122 374.302 478.916 353.588V418.661Z" fill="black"/>
+                            <path d="M400.552 736.584C228.001 736.584 87.6183 596.201 87.6183 423.65C87.6183 260.26 213.499 125.739 373.364 111.909V161.792C373.364 165.336 375.32 168.593 378.445 170.257C379.86 171.013 381.41 171.383 382.955 171.383C384.825 171.383 386.694 170.835 388.302 169.752L501.569 93.6529C504.222 91.8722 505.812 88.8865 505.812 85.6904C505.812 82.4967 504.222 79.5086 501.569 77.7278L388.302 1.62843C385.362 -0.347619 381.57 -0.545478 378.442 1.12617C375.317 2.79275 373.361 6.0498 373.361 9.59096V48.285C178.489 62.267 24.1996 225.269 24.1996 423.648C24.1996 631.168 193.034 799.997 400.549 799.997C496.627 799.997 588.094 763.797 658.1 698.067L614.695 651.834C556.49 706.486 480.441 736.584 400.552 736.584Z" fill="black"/>
+                            <path d="M721.808 227.509C708.843 206.305 693.682 186.284 676.76 168.01L630.227 211.094C644.311 226.302 656.918 242.96 667.709 260.597L721.808 227.509Z" fill="black"/>
+                            <path d="M710.631 381.151L773.472 372.621C770.118 347.914 764.276 323.478 756.106 299.991L696.211 320.82C702.994 340.324 707.844 360.622 710.631 381.151Z" fill="black"/>
+                            <path d="M616.403 115.313C595.995 100.999 574.096 88.6886 551.312 78.717L525.89 136.814C544.823 145.101 563.026 155.334 579.989 167.231L616.403 115.313Z" fill="black"/>
+                            <path d="M642.299 622.374L691.264 662.673C707.103 643.428 721.07 622.551 732.771 600.622L676.826 570.763C667.095 588.997 655.48 606.362 642.299 622.374Z" fill="black"/>
+                            <path d="M712.564 447.85C710.987 468.541 707.336 489.106 701.725 508.965L762.749 526.22C769.512 502.309 773.901 477.567 775.803 452.682L712.564 447.85Z" fill="black"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2_32">
+                            <rect width="800" height="800" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                            
+                        <div class="service-detail">
+                            <h3>24 x 7 Service</h3>
+                            <h6 class="text-content">Online Service For 24 x 7</h6>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="service-contain-2">
+                        <svg viewBox="0 0 291 226" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M126.21 144.932H89.2665C88.136 144.932 87.0518 145.381 86.2523 146.18C85.4529 146.98 85.0038 148.064 85.0038 149.194C85.0038 150.325 85.4529 151.409 86.2523 152.209C87.0518 153.008 88.136 153.457 89.2665 153.457H126.21C127.34 153.457 128.425 153.008 129.224 152.209C130.023 151.409 130.473 150.325 130.473 149.194C130.473 148.064 130.023 146.98 129.224 146.18C128.425 145.381 127.34 144.932 126.21 144.932ZM120.526 174.486H31.5496C30.4191 174.486 29.3349 174.935 28.5354 175.735C27.736 176.534 27.2869 177.618 27.2869 178.749C27.2869 179.88 27.736 180.964 28.5354 181.763C29.3349 182.563 30.4191 183.012 31.5496 183.012H120.538C121.668 183.012 122.752 182.563 123.552 181.763C124.351 180.964 124.8 179.88 124.8 178.749C124.8 177.618 124.351 176.534 123.552 175.735C122.752 174.935 121.668 174.486 120.538 174.486H120.526ZM68.6749 144.932H31.7315C30.601 144.932 29.5167 145.381 28.7173 146.18C27.9179 146.98 27.4688 148.064 27.4688 149.194C27.4688 150.325 27.9179 151.409 28.7173 152.209C29.5167 153.008 30.601 153.457 31.7315 153.457H68.6749C69.8054 153.457 70.8896 153.008 71.689 152.209C72.4885 151.409 72.9376 150.325 72.9376 149.194C72.9376 148.064 72.4885 146.98 71.689 146.18C70.8896 145.381 69.8054 144.932 68.6749 144.932ZM37.2275 117.65H65.6455C68.2825 117.647 70.8106 116.599 72.6753 114.734C74.5399 112.869 75.5888 110.341 75.5918 107.704V90.085C75.5888 87.448 74.5399 84.9198 72.6753 83.0552C70.8106 81.1906 68.2825 80.1417 65.6455 80.1387H37.2275C34.5905 80.1417 32.0624 81.1906 30.1978 83.0552C28.3331 84.9198 27.2843 87.448 27.2812 90.085V107.704C27.2843 110.341 28.3331 112.869 30.1978 114.734C32.0624 116.599 34.5905 117.647 37.2275 117.65ZM35.8066 90.085C35.8066 89.7081 35.9563 89.3467 36.2228 89.0802C36.4893 88.8138 36.8507 88.6641 37.2275 88.6641H65.6455C66.0224 88.6641 66.3838 88.8138 66.6502 89.0802C66.9167 89.3467 67.0664 89.7081 67.0664 90.085V107.704C67.0664 108.081 66.9167 108.442 66.6502 108.709C66.3838 108.975 66.0224 109.125 65.6455 109.125H37.2275C36.8507 109.125 36.4893 108.975 36.2228 108.709C35.9563 108.442 35.8066 108.081 35.8066 107.704V90.085ZM80.4229 191.537H31.7429C30.6123 191.537 29.5281 191.986 28.7287 192.786C27.9293 193.585 27.4802 194.669 27.4802 195.8C27.4802 196.93 27.9293 198.015 28.7287 198.814C29.5281 199.613 30.6123 200.062 31.7429 200.062H80.4229C81.5534 200.062 82.6376 199.613 83.437 198.814C84.2364 198.015 84.6855 196.93 84.6855 195.8C84.6855 194.669 84.2364 193.585 83.437 192.786C82.6376 191.986 81.5534 191.537 80.4229 191.537ZM183.739 144.932H146.796C145.665 144.932 144.581 145.381 143.782 146.18C142.982 146.98 142.533 148.064 142.533 149.194C142.533 150.325 142.982 151.409 143.782 152.209C144.581 153.008 145.665 153.457 146.796 153.457H183.739C184.87 153.457 185.954 153.008 186.753 152.209C187.553 151.409 188.002 150.325 188.002 149.194C188.002 148.064 187.553 146.98 186.753 146.18C185.954 145.381 184.87 144.932 183.739 144.932ZM235.585 80.1387H172.497C169.86 80.1417 167.332 81.1906 165.467 83.0552C163.603 84.9198 162.554 87.448 162.551 90.085V96.9053C162.554 99.5423 163.603 102.07 165.467 103.935C167.332 105.8 169.86 106.849 172.497 106.852H235.585C238.222 106.849 240.75 105.8 242.615 103.935C244.479 102.07 245.528 99.5423 245.531 96.9053V90.085C245.528 87.448 244.479 84.9198 242.615 83.0552C240.75 81.1906 238.222 80.1417 235.585 80.1387ZM237.006 96.9053C237.006 97.2821 236.856 97.6435 236.59 97.91C236.323 98.1765 235.962 98.3262 235.585 98.3262H172.497C172.12 98.3262 171.759 98.1765 171.492 97.91C171.226 97.6435 171.076 97.2821 171.076 96.9053V90.085C171.076 89.7081 171.226 89.3467 171.492 89.0802C171.759 88.8138 172.12 88.6641 172.497 88.6641H235.585C235.962 88.6641 236.323 88.8138 236.59 89.0802C236.856 89.3467 237.006 89.7081 237.006 90.085V96.9053ZM269.687 0H39.501C33.8501 0.00601794 28.4325 2.25347 24.4367 6.24922C20.441 10.245 18.1935 15.6626 18.1875 21.3135V54.7955C13.1346 55.5506 8.52029 58.0933 5.18289 61.9616C1.84548 65.8298 0.00647454 70.767 0 75.876V204.325C0.00601794 209.976 2.25347 215.394 6.24922 219.389C10.245 223.385 15.6626 225.633 21.3135 225.639H251.499C257.15 225.633 262.568 223.385 266.563 219.389C270.559 215.394 272.806 209.976 272.812 204.325V170.843C277.865 170.088 282.48 167.545 285.817 163.677C289.155 159.809 290.994 154.872 291 149.763V21.3135C290.994 15.6626 288.747 10.245 284.751 6.24922C280.755 2.25347 275.337 0.00601794 269.687 0ZM264.287 204.325C264.284 207.716 262.936 210.967 260.538 213.364C258.141 215.762 254.89 217.11 251.499 217.113H21.3135C17.9228 217.11 14.6718 215.762 12.2743 213.364C9.87668 210.967 8.5284 207.716 8.52539 204.325V75.876C8.5284 72.4853 9.87668 69.2343 12.2743 66.8368C14.6718 64.4392 17.9228 63.0909 21.3135 63.0879H251.499C254.89 63.0909 258.141 64.4392 260.538 66.8368C262.936 69.2343 264.284 72.4853 264.287 75.876V204.325ZM282.475 149.763C282.471 152.61 281.519 155.374 279.77 157.62C278.02 159.866 275.572 161.465 272.812 162.164V75.876C272.812 75.3986 272.813 74.9268 272.761 74.4551H282.475V149.763ZM282.475 65.9297H270.34C268.529 62.5016 265.818 59.6319 262.498 57.629C259.179 55.6262 255.376 54.566 251.499 54.5625H26.7129V38.0801H282.475V65.9297ZM282.475 29.5547H26.7129V21.3135C26.7159 17.9228 28.0642 14.6718 30.4618 12.2743C32.8593 9.87668 36.1103 8.5284 39.501 8.52539H269.687C273.077 8.5284 276.328 9.87668 278.726 12.2743C281.123 14.6718 282.472 17.9228 282.475 21.3135V29.5547ZM241.269 144.932H204.325C203.195 144.932 202.11 145.381 201.311 146.18C200.512 146.98 200.062 148.064 200.062 149.194C200.062 150.325 200.512 151.409 201.311 152.209C202.11 153.008 203.195 153.457 204.325 153.457H241.269C242.399 153.457 243.483 153.008 244.283 152.209C245.082 151.409 245.531 150.325 245.531 149.194C245.531 148.064 245.082 146.98 244.283 146.18C243.483 145.381 242.399 144.932 241.269 144.932ZM228.48 171.076C225.488 171.071 222.548 171.855 219.955 173.35C217.363 171.857 214.423 171.073 211.432 171.076C208.441 171.079 205.503 171.869 202.914 173.366C200.324 174.863 198.174 177.015 196.68 179.606C195.185 182.197 194.398 185.136 194.398 188.127C194.398 191.118 195.185 194.057 196.68 196.648C198.174 199.239 200.324 201.391 202.914 202.888C205.503 204.385 208.441 205.175 211.432 205.178C214.423 205.181 217.363 204.397 219.955 202.904C222.22 204.208 224.755 204.974 227.363 205.142C229.971 205.311 232.583 204.877 234.997 203.875C237.411 202.873 239.563 201.33 241.285 199.364C243.008 197.399 244.255 195.063 244.932 192.539C245.608 190.014 245.695 187.368 245.185 184.804C244.676 182.241 243.584 179.828 241.994 177.754C240.404 175.68 238.358 173.999 236.015 172.841C233.672 171.683 231.094 171.079 228.48 171.076ZM211.43 196.652C209.744 196.652 208.095 196.152 206.693 195.216C205.291 194.279 204.199 192.947 203.553 191.389C202.908 189.832 202.739 188.117 203.068 186.464C203.397 184.81 204.209 183.291 205.401 182.099C206.594 180.906 208.113 180.094 209.766 179.765C211.42 179.436 213.134 179.605 214.692 180.251C216.25 180.896 217.582 181.989 218.518 183.39C219.455 184.792 219.955 186.441 219.955 188.127C219.955 190.388 219.057 192.556 217.458 194.155C215.859 195.754 213.691 196.652 211.43 196.652ZM228.48 196.652C227.761 196.652 227.045 196.558 226.349 196.374C227.745 193.851 228.477 191.016 228.477 188.133C228.477 185.25 227.745 182.414 226.349 179.891C227.044 179.703 227.76 179.606 228.48 179.602C230.742 179.602 232.91 180.5 234.509 182.099C236.108 183.697 237.006 185.866 237.006 188.127C237.006 190.388 236.108 192.556 234.509 194.155C232.91 195.754 230.742 196.652 228.48 196.652Z" fill="black"/>
+                            </svg>
+                            
+                        <div class="service-detail">
+                            <h3>Online Pay</h3>
+                            <h6 class="text-content">Online Payment Avaible</h6>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="service-contain-2">
+                        <svg viewBox="0 0 397 452" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M128.883 332.407L111.29 303.862L74.1414 310.536L122.997 223.888H27.7301V451.765H190.057V223.888L128.883 332.407Z" fill="black"/>
+                            <path d="M396.062 115.144H288.268C294.571 111.895 300.2 108.502 305.185 104.9C324.354 91.1662 334.534 73.766 334.502 56.4944C334.502 42.3266 327.796 22.0317 318.051 13.5728C308.289 5.01745 295.343 1.22948e-05 281.529 1.22948e-05C266.766 1.22948e-05 253.049 5.0657 241.293 12.9456C223.62 24.7817 209.79 50.4156 199.932 69.9708C199.433 70.9517 198.935 71.9006 198.452 72.8494C194.85 65.3071 190.637 50.2066 185.86 43.3237C177.498 31.3912 167.447 20.8417 155.643 12.9456C143.92 5.0657 130.218 1.22948e-05 115.471 1.22948e-05C100.773 0.0482569 87.3127 6.20748 77.2456 15.7117C67.2269 25.1194 60.2153 46.2987 60.151 61.4315C60.0867 70.2602 62.6597 79.5071 67.9827 87.9178C74.6726 98.4512 85.2703 107.634 99.9045 115.144H0.665394L0.890536 205.763H187.243V115.144H209.95V205.763H396.335L396.062 115.144ZM106.337 86.8081C98.8592 82.0802 94.2599 77.3361 91.5582 73.0745C88.9369 68.8451 88.0203 61.4154 88.0203 57.7649C87.9559 51.67 90.9954 40.9758 96.3988 35.9583C101.673 30.9248 108.846 27.8211 115.278 27.8211H115.471C123.753 27.8854 131.955 30.6514 140.221 36.1031C152.523 44.2242 164.118 66.3042 172.175 82.4822C176.388 90.7159 179.605 99.3196 181.776 107.73C144.45 103.871 120.328 95.6369 106.337 86.8081ZM233.912 67.1082C240.634 57.4754 248.562 41.5869 256.78 36.1031C264.949 30.6514 273.247 27.8854 281.529 27.8211H281.61C288.509 27.8211 295.15 30.5228 299.669 34.5271C304.204 38.5957 306.633 46.0414 306.633 51.284C306.536 57.4754 303.336 71.7237 288.879 82.2892C275.161 92.2919 251.344 102.536 214.727 109.708C218.184 95.1866 224.955 79.8127 233.912 67.1082Z" fill="black"/>
+                            <path d="M323.053 310.166L285.921 303.862L268.392 332.745L208.006 225.351V451.765H369.513V223.888H274.246L323.053 310.166Z" fill="black"/>
+                        </svg>
+                        <div class="service-detail">
+                            <h3>Festival Offer</h3>
+                            <h6 class="text-content">Super Sale Upto 50% off</h6>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="service-contain-2">
+                        <svg viewBox="0 0 28 26" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M27.723 10.309C27.6323 10.214 27.5237 10.1379 27.4035 10.0849C27.2834 10.0319 27.1539 10.0031 27.0226 10.0001C26.8913 9.99713 26.7607 10.0201 26.6383 10.0676C26.5158 10.1151 26.4039 10.1862 26.309 10.277L25.849 10.717C25.5498 7.78122 24.1729 5.06061 21.9843 3.08112C19.7957 1.10163 16.951 0.00384359 14 -6.95007e-06C11.4638 -0.0138644 8.99075 0.790195 6.94765 2.29289C4.90455 3.79558 3.40028 5.91685 2.65799 8.34199C2.57988 8.59554 2.6057 8.86973 2.72975 9.10424C2.85381 9.33876 3.06594 9.51439 3.31949 9.59249C3.57304 9.6706 3.84723 9.64479 4.08174 9.52073C4.31626 9.39667 4.49188 9.18454 4.56999 8.93099C5.18716 6.91506 6.438 5.15191 8.13679 3.90331C9.83558 2.6547 11.8917 1.98723 14 1.99999C16.358 2.00426 18.6373 2.84867 20.4289 4.3817C22.2205 5.91473 23.4072 8.03603 23.776 10.365L23.724 10.31C23.541 10.118 23.2892 10.0065 23.024 10.0001C22.7589 9.99377 22.502 10.093 22.31 10.276C22.118 10.459 22.0065 10.7108 22.0001 10.976C21.9938 11.2411 22.093 11.498 22.276 11.69L24.186 13.69C24.2766 13.7851 24.385 13.8614 24.5051 13.9146C24.6253 13.9678 24.7547 13.9968 24.886 14H24.908C25.1657 14.0003 25.4136 13.9011 25.6 13.723L27.69 11.723C27.785 11.6323 27.8612 11.5238 27.9143 11.4037C27.9674 11.2836 27.9963 11.1541 27.9994 11.0228C28.0025 10.8915 27.9796 10.7609 27.9322 10.6384C27.8848 10.5159 27.8137 10.404 27.723 10.309ZM24.68 16.408C24.4266 16.3299 24.1525 16.3557 23.9181 16.4797C23.6837 16.6036 23.5081 16.8156 23.43 17.069C22.8128 19.0849 21.562 20.8481 19.8632 22.0967C18.1644 23.3453 16.1082 24.0128 14 24C11.642 23.9957 9.36273 23.1513 7.57111 21.6183C5.77949 20.0853 4.59281 17.964 4.22399 15.635L4.27599 15.69C4.45899 15.882 4.71077 15.9935 4.97595 15.9998C5.24113 16.0062 5.49797 15.907 5.68999 15.724C5.88201 15.541 5.99346 15.2892 5.99984 15.024C6.00622 14.7589 5.90699 14.502 5.72399 14.31L3.81399 12.31C3.63085 12.1183 3.37906 12.0071 3.11399 12.001C2.98248 11.9962 2.85136 12.0181 2.72861 12.0656C2.60586 12.113 2.49406 12.185 2.39999 12.277L0.30999 14.277C0.118239 14.4603 0.00714249 14.7122 0.00114133 14.9774C-0.00485984 15.2425 0.0947258 15.4992 0.27799 15.691C0.461255 15.8827 0.713186 15.9938 0.978363 15.9998C1.24354 16.0058 1.50024 15.9063 1.69199 15.723L2.15199 15.283C2.45113 18.2186 3.82795 20.9391 6.01631 22.9185C8.20468 24.898 11.0492 25.9959 14 26C16.5362 26.0138 19.0092 25.2098 21.0523 23.7071C23.0954 22.2044 24.5997 20.0831 25.342 17.658C25.3806 17.5325 25.3941 17.4005 25.3818 17.2698C25.3694 17.139 25.3314 17.0119 25.2699 16.8959C25.2085 16.7798 25.1247 16.6769 25.0235 16.5932C24.9223 16.5095 24.8055 16.4466 24.68 16.408Z" fill="#171938"/>
+                        </svg>
+                        <div class="service-detail">
+                            <h3>100% Original</h3>
+                            <h6 class="text-content">100% Money Back</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service Section End -->
+
+    <!-- Footer Start -->
+    <footer class="section-t-space footer-section-2 footer-color-2">
+        <div class="container-fluid-lg">
+            <div class="main-footer">
+                <div class="row g-md-4 gy-sm-5">
+                    <div class="col-xxl-3 col-xl-4 col-sm-6">
+                        <a href="index.html" class="foot-logo theme-logo">
+                            <img src="assets/images/logo/logo.png" class="img-fluid blur-up lazyload" alt="Nekton Cart">
+                        </a>
+                        <p class="information-text information-text-2">it is a long established fact that a reader will
+                            be distracted by the readable content.</p>
+                        <ul class="social-icon">
+                            <li class="light-bg">
+                                <a href="https://www.facebook.com/" class="footer-link-color">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="light-bg">
+                                <a href="#"
+                                    class="footer-link-color">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                            </li>
+                            <li class="light-bg">
+                                <a href="https://twitter.com/i/flow/login" class="footer-link-color">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="light-bg">
+                                <a href="https://www.instagram.com/" class="footer-link-color">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="light-bg">
+                                <a href="https://in.pinterest.com/" class="footer-link-color">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-2 col-xl-4 col-sm-6">
+                        <div class="footer-title">
+                            <h4 class="text-white">About Nekton Cart</h4>
+                        </div>
+                        <ul class="footer-list footer-contact footer-list-light">
+                            <li>
+                                <a href="about-us.html" class="light-text">About Us</a>
+                            </li>
+                            <li>
+                                <a href="contact-us.html" class="light-text">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="term_condition.html" class="light-text">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="careers.html" class="light-text">Careers</a>
+                            </li>
+                            <li>
+                                <a href="blog-list.html" class="light-text">Latest Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-2 col-xl-4 col-sm-6">
+                        <div class="footer-title">
+                            <h4 class="text-white">Useful Link</h4>
+                        </div>
+                        <ul class="footer-list footer-list-light footer-contact">
+                            <li>
+                                <a href="order-success.html" class="light-text">Your Order</a>
+                            </li>
+                            <li>
+                                <a href="user-dashboard.html" class="light-text">Your Account</a>
+                            </li>
+                            <li>
+                                <a href="order-tracking.html" class="light-text">Track Orders</a>
+                            </li>
+                            <li>
+                                <a href="wishlist.html" class="light-text">Your Wishlist</a>
+                            </li>
+                            <li>
+                                <a href="faq.html" class="light-text">FAQs</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-2 col-xl-4 col-sm-6">
+                        <div class="footer-title">
+                            <h4 class="text-white">Categories</h4>
+                        </div>
+                        <ul class="footer-list footer-list-light footer-contact">
+                            <li>
+                                <a href="vegetables-demo.html" class="light-text">Fresh Vegetables</a>
+                            </li>
+                            <li>
+                                <a href="spice-demo.html" class="light-text">Hot Spice</a>
+                            </li>
+                            <li>
+                                <a href="bags-demo.html" class="light-text">Brand New Bags</a>
+                            </li>
+                            <li>
+                                <a href="bakery-demo.html" class="light-text">New Bakery</a>
+                            </li>
+                            <li>
+                                <a href="grocery-demo.html" class="light-text">New Grocery</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-4 col-sm-6">
+                        <div class="footer-title">
+                            <h4 class="text-white">Store information</h4>
+                        </div>
+                        <ul class="footer-address footer-contact">
+                            <li>
+                                <a href="javascript:void(0)" class="light-text">
+                                    <div class="inform-box flex-start-box">
+                                        <i data-feather="map-pin"></i>
+                                        <p>Nekton Cart Demo Store, Demo store india 345 - 659</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)" class="light-text">
+                                    <div class="inform-box">
+                                        <i data-feather="phone"></i>
+                                        <p>Call us: 123-456-7890</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)" class="light-text">
+                                    <div class="inform-box">
+                                        <i data-feather="mail"></i>
+                                        <p>Email Us: Support@nektoncart.com</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)" class="light-text">
+                                    <div class="inform-box">
+                                        <i data-feather="printer"></i>
+                                        <p>Fax: 123456</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-footer sub-footer-lite section-b-space section-t-space">
+                <div class="left-footer">
+                    <p class="light-text">2024 Copyright By Nekton Cart Powered By Zara Software Provider</p>
+                </div>
+
+                <ul class="payment-box">
+                    <li>
+                        <img src="assets/images/icon/paymant/visa.png" class="blur-up lazyload" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/images/icon/paymant/discover.png" alt="" class="blur-up lazyload">
+                    </li>
+                    <li>
+                        <img src="assets/images/icon/paymant/american.png" alt="" class="blur-up lazyload">
+                    </li>
+                    <li>
+                        <img src="assets/images/icon/paymant/master-card.png" alt="" class="blur-up lazyload">
+                    </li>
+                    <li>
+                        <img src="assets/images/icon/paymant/giro-pay.png" alt="" class="blur-up lazyload">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Quick View Modal Box Start -->
+    <div class="modal fade theme-modal view-modal" id="view" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header p-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-sm-4 g-2">
+                        <div class="col-lg-6">
+                            <div class="slider-image">
+                                <img src="assets/images/product/category/1.jpg" class="img-fluid blur-up lazyload"
+                                    alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="right-sidebar-modal">
+                                <h4 class="title-name">Peanut Butter Bite Premium Butter Cookies 600 g</h4>
+                                <h4 class="price">$36.99</h4>
+                                <div class="product-rating">
+                                    <ul class="rating">
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star"></i>
+                                        </li>
+                                    </ul>
+                                    <span class="ms-2">8 Reviews</span>
+                                    <span class="ms-2 text-danger">6 sold in last 16 hours</span>
+                                </div>
+
+                                <div class="product-detail">
+                                    <h4>Product Details :</h4>
+                                    <p>Candy canes sugar plum tart cotton candy chupa chups sugar plum chocolate I love.
+                                        Caramels marshmallow icing dessert candy canes I love soufflé I love toffee.
+                                        Marshmallow pie sweet sweet roll sesame snaps tiramisu jelly bear claw. Bonbon
+                                        muffin I love carrot cake sugar plum dessert bonbon.</p>
+                                </div>
+
+                                <ul class="brand-list">
+                                    <li>
+                                        <div class="brand-box">
+                                            <h5>Brand Name:</h5>
+                                            <h6>Black Forest</h6>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="brand-box">
+                                            <h5>Product Code:</h5>
+                                            <h6>W0690034</h6>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="brand-box">
+                                            <h5>Product Type:</h5>
+                                            <h6>White Cream Cake</h6>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="select-size">
+                                    <h4>Cake Size :</h4>
+                                    <select class="form-select select-form-size">
+                                        <option selected>Select Size</option>
+                                        <option value="1.2">1/2 KG</option>
+                                        <option value="0">1 KG</option>
+                                        <option value="1.5">1/5 KG</option>
+                                        <option value="red">Red Roses</option>
+                                        <option value="pink">With Pink Roses</option>
+                                    </select>
+                                </div>
+
+                                <div class="modal-button">
+                                    <button onclick="location.href = 'cart.html';"
+                                        class="btn btn-md add-cart-button icon">Add
+                                        To Cart</button>
+                                    <button onclick="location.href = 'product-left.html';"
+                                        class="btn theme-bg-color view-button icon text-white fw-bold btn-md">
+                                        View More Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quick View Modal Box End -->
+
+    <!-- Cookie Bar Box Start -->
+    <div class="cookie-bar-box">
+        <div class="cookie-box">
+            <div class="cookie-image">
+                <img src="assets/images/cookie-bar.png" class="blur-up lazyload" alt="">
+                <h2>Cookies!</h2>
+            </div>
+
+            <div class="cookie-contain">
+                <h5 class="text-content">We use cookies to make your experience better</h5>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button class="btn privacy-button">Privacy Policy</button>
+            <button class="btn ok-button">OK</button>
+        </div>
+    </div>
+    <!-- Cookie Bar Box End -->
+
+    <!-- Tap to top and theme setting button start -->
+    <div class="theme-option">
+
+        <div class="back-to-top">
+            <a id="back-to-top" href="#">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Tap to top and theme setting button end -->
+
+       <!-- Sticky Cart Box Start -->
+       <div class="sticky-bottom-cart">
+        <div class="container-fluid-lg">
+            <div class="row">
+                <div class="col-12">
+                    <div class="cart-content">
+                        <div class="product-image">
+                            <img src="../assets/images/product/category/1.jpg" class="img-fluid blur-up lazyload"
+                                alt="">
+                            <div class="content">
+                                <h5>Creamy Chocolate Cake</h5>
+                                <h6>$32.96<del class="text-danger">$96.00</del><span>55% off</span></h6>
+                            </div>
+                        </div>
+                        <div class="selection-section">
+                            <div class="form-group mb-0">
+                                <select id="input-state" class="form-control form-select">
+                                    <option selected disabled>Choose Weight...</option>
+                                    <option>1/2 KG</option>
+                                    <option>1 KG</option>
+                                    <option>1.5 KG</option>
+                                </select>
+                            </div>
+                            <div class="cart_qty qty-box product-qty m-0">
+                                <div class="input-group h-100">
+                                    <button type="button" class="qty-left-minus" data-type="minus" data-field="">
+                                        <i class="fa fa-minus"></i>
+                                    </button>
+                                    <input class="form-control input-number qty-input" type="text" name="quantity"
+                                        value="1">
+                                    <button type="button" class="qty-right-plus" data-type="plus" data-field="">
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="add-btn">
+                            <a class="btn theme-bg-color text-white wishlist-btn" href="wishlist.html"><i
+                                    class="fa fa-bookmark"></i> Wishlist</a>
+                            <a class="btn theme-bg-color text-white" href="cart.html"><i
+                                    class="fas fa-shopping-cart"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sticky Cart Box End -->
+
+    <!-- Chart Modal Start -->
+    <div class="modal fade theme-modal" id="chart" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Size Chart</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="../assets/images/sizechart.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Chart Modal End -->
+
+    <!-- Delivery Modal Start -->
+    <div class="modal fade theme-modal delivery-modal" id="delivery" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLabel">Delivery & Return</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body policy-body">
+                    <p>Shipping and Returns are integral parts of your shopping experience, and we aim to make them as
+                        smooth as possible. We prioritize efficient shipping, striving to deliver your orders promptly
+                        within the estimated delivery window, typically ranging from 5 to 7 days. We understand that
+                        sometimes your purchase may not meet your expectations, so we offer a straightforward return
+                        policy. If you find yourself unsatisfied with your order, eligible items can be returned within
+                        30 days of purchase, ensuring you have ample time to make a decision. Our commitment is to
+                        ensure your satisfaction and convenience throughout your shopping journey with us, and we're
+                        here to assist you every step of the way.</p>
+                    <h5>Our Shipping Commitment:</h5>
+                    <ul>
+                        <li>Timely and reliable delivery within 5-7 days.</li>
+                        <li>Real-time tracking for your orders.</li>
+                        <li>Exceptional packaging to ensure your items arrive in perfect condition.</li>
+                    </ul>
+                    <h5>Our Hassle-Free Returns:</h5>
+                    <ul>
+                        <li>Eligible items can be returned within 30 days.</li>
+                        <li>Easy return initiation through our website.</li>
+                        <li>Prompt processing of returns for a hassle-free experience.</li>
+                    </ul>
+                    <p>We understand that your shopping needs may vary, and we are here to accommodate them
+                        while providing exceptional service.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Delivery Modal End -->
+
+    <!-- Ask a question Modal Start -->
+    <div class="modal fade theme-modal question-modal" id="question" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Write a review</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body pt-0">
+                    <form class="product-review-form">
+                        <div class="product-wrapper">
+                            <div class="product-image">
+                                <img class="img-fluid" alt="Solid Collared Tshirts"
+                                    src="../assets/images/fashion/product/26.jpg">
+                            </div>
+                            <div class="product-content">
+                                <h5 class="name">Solid Collared Tshirts</h5>
+                                <div class="product-review-rating">
+                                    <div class="product-rating">
+                                        <h6 class="price-number">$16.00</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <div class="product-review-rating">
+                                <label>Rating</label>
+                                <div class="product-rating">
+                                    <ul class="rating">
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <label for="content" class="form-label">Your Question *</label>
+                            <textarea id="content" rows="3" class="form-control" placeholder="Your Question"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-md btn-theme-outline fw-bold"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-md fw-bold text-light theme-bg-color">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ask a question Modal End -->
+
+    <!-- Review Modal Start -->
+    <div class="modal fade theme-modal question-modal" id="writereview" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Write a review</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body pt-0">
+                    <form class="product-review-form">
+                        <div class="product-wrapper">
+                            <div class="product-image">
+                                <img class="img-fluid" alt="Solid Collared Tshirts"
+                                    src="../assets/images/fashion/product/26.jpg">
+                            </div>
+                            <div class="product-content">
+                                <h5 class="name">Solid Collared Tshirts</h5>
+                                <div class="product-review-rating">
+                                    <div class="product-rating">
+                                        <h6 class="price-number">$16.00</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <div class="product-review-rating">
+                                <label>Rating</label>
+                                <div class="product-rating">
+                                    <ul class="rating">
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star" class="fill"></i>
+                                        </li>
+                                        <li>
+                                            <i data-feather="star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <label for="content" class="form-label">Your Question *</label>
+                            <textarea id="content" rows="3" class="form-control" placeholder="Your Question"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-md btn-theme-outline fw-bold"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-md fw-bold text-light theme-bg-color">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Review Modal End -->
+
+    <!-- Bg overlay Start -->
+    <div class="bg-overlay"></div>
+    <!-- Bg overlay End -->
+
+    <!-- latest jquery-->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- jquery ui-->
+    <script src="assets/js/jquery-ui.min.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap-notify.min.js"></script>
+    <script src="assets/js/bootstrap/popper.min.js"></script>
+
+    <!-- feather icon js-->
+    <script src="assets/js/feather/feather.min.js"></script>
+    <script src="assets/js/feather/feather-icon.js"></script>
+
+    <!-- Lazyload Js -->
+    <script src="assets/js/lazysizes.min.js"></script>
+
+    <!-- Slick js-->
+    <script src="assets/js/slick/slick.js"></script>
+    <script src="assets/js/slick/slick-animation.min.js"></script>
+    <script src="assets/js/custom-slick-animated.js"></script>
+    <script src="assets/js/slick/custom_slick.js"></script>
+
+    <!-- Range slider js -->
+    <script src="assets/js/ion.rangeSlider.min.js"></script>
+
+    <!-- Auto Height Js -->
+    <script src="assets/js/auto-height.js"></script>
+
+    <!-- Lazyload Js -->
+    <script src="assets/js/lazysizes.min.js"></script>
+
+    <!-- Quantity js -->
+    <script src="assets/js/quantity-2.js"></script>
+
+    <!-- Zoom Js -->
+    <script src="assets/js/jquery.elevatezoom.js"></script>
+    <script src="assets/js/zoom-filter.js"></script>
+
+    <!-- Fly Cart Js -->
+    <script src="assets/js/fly-cart.js"></script>
+
+    <!-- Timer Js -->
+    <script src="assets/js/timer1.js"></script>
+    <script src="assets/js/timer2.js"></script>
+
+    <!-- Copy clipboard Js -->
+    <script src="assets/js/clipboard.min.js"></script>
+    <script src="assets/js/copy-clipboard.js"></script>
+
+    <!-- WOW js -->
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/custom-wow.js"></script>
+
+    <!-- script js -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- theme setting js -->
+    <script src="assets/js/theme-setting.js"></script>
+
+    <!-- filter js  -->
+</body>
+
+
+</html>
