@@ -773,7 +773,7 @@
                             <div class="profile-contain">
                                 <div class="profile-image">
                                     <div class="position-relative">
-                                        <img src="../assets/images/inner-page/user/1.jpg"
+                                        <img src="assets/images/inner-page/user/1.jpg"
                                             class="blur-up lazyload update_img" alt="">
                                         <div class="cover-icon">
                                             <i class="fa-solid fa-pen">
@@ -3348,8 +3348,8 @@
     </div>
     <!-- Tap to top and theme setting button end -->
 
-       <!-- Sticky Cart Box Start -->
-       <div class="sticky-bottom-cart">
+    <!-- Sticky Cart Box Start -->
+    <div class="sticky-bottom-cart">
         <div class="container-fluid-lg">
             <div class="row">
                 <div class="col-12">
@@ -3397,194 +3397,392 @@
     </div>
     <!-- Sticky Cart Box End -->
 
-    <!-- Chart Modal Start -->
-    <div class="modal fade theme-modal" id="chart" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
+    <!-- Add address modal box start -->
+    <div class="modal fade theme-modal" id="add-address" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Size Chart</h1>
+                    <h5 class="modal-title" id="exampleModalLabel">Add a new address</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
-                <div class="modal-body p-0">
-                    <img src="../assets/images/sizechart.jpg" class="img-fluid" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Chart Modal End -->
-
-    <!-- Delivery Modal Start -->
-    <div class="modal fade theme-modal delivery-modal" id="delivery" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title" id="exampleModalLabel">Delivery & Return</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
-                </div>
-                <div class="modal-body policy-body">
-                    <p>Shipping and Returns are integral parts of your shopping experience, and we aim to make them as
-                        smooth as possible. We prioritize efficient shipping, striving to deliver your orders promptly
-                        within the estimated delivery window, typically ranging from 5 to 7 days. We understand that
-                        sometimes your purchase may not meet your expectations, so we offer a straightforward return
-                        policy. If you find yourself unsatisfied with your order, eligible items can be returned within
-                        30 days of purchase, ensuring you have ample time to make a decision. Our commitment is to
-                        ensure your satisfaction and convenience throughout your shopping journey with us, and we're
-                        here to assist you every step of the way.</p>
-                    <h5>Our Shipping Commitment:</h5>
-                    <ul>
-                        <li>Timely and reliable delivery within 5-7 days.</li>
-                        <li>Real-time tracking for your orders.</li>
-                        <li>Exceptional packaging to ensure your items arrive in perfect condition.</li>
-                    </ul>
-                    <h5>Our Hassle-Free Returns:</h5>
-                    <ul>
-                        <li>Eligible items can be returned within 30 days.</li>
-                        <li>Easy return initiation through our website.</li>
-                        <li>Prompt processing of returns for a hassle-free experience.</li>
-                    </ul>
-                    <p>We understand that your shopping needs may vary, and we are here to accommodate them
-                        while providing exceptional service.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Delivery Modal End -->
-
-    <!-- Ask a question Modal Start -->
-    <div class="modal fade theme-modal question-modal" id="question" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Write a review</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
-                </div>
-                <div class="modal-body pt-0">
-                    <form class="product-review-form">
-                        <div class="product-wrapper">
-                            <div class="product-image">
-                                <img class="img-fluid" alt="Solid Collared Tshirts"
-                                    src="../assets/images/fashion/product/26.jpg">
-                            </div>
-                            <div class="product-content">
-                                <h5 class="name">Solid Collared Tshirts</h5>
-                                <div class="product-review-rating">
-                                    <div class="product-rating">
-                                        <h6 class="price-number">$16.00</h6>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-floating mb-4 theme-form-floating">
+                            <input type="text" class="form-control" id="fname" placeholder="Enter First Name">
+                            <label for="fname">First Name</label>
                         </div>
-                        <div class="review-box">
-                            <div class="product-review-rating">
-                                <label>Rating</label>
-                                <div class="product-rating">
-                                    <ul class="rating">
-                                        <li>
-                                            <i data-feather="star" class="fill"></i>
-                                        </li>
-                                        <li>
-                                            <i data-feather="star" class="fill"></i>
-                                        </li>
-                                        <li>
-                                            <i data-feather="star" class="fill"></i>
-                                        </li>
-                                        <li>
-                                            <i data-feather="star" class="fill"></i>
-                                        </li>
-                                        <li>
-                                            <i data-feather="star"></i>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                    </form>
+
+                    <form>
+                        <div class="form-floating mb-4 theme-form-floating">
+                            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name">
+                            <label for="lname">Last Name</label>
                         </div>
-                        <div class="review-box">
-                            <label for="content" class="form-label">Your Question *</label>
-                            <textarea id="content" rows="3" class="form-control" placeholder="Your Question"></textarea>
+                    </form>
+
+                    <form>
+                        <div class="form-floating mb-4 theme-form-floating">
+                            <input type="email" class="form-control" id="email" placeholder="Enter Email Address">
+                            <label for="email">Email Address</label>
+                        </div>
+                    </form>
+
+                    <form>
+                        <div class="form-floating mb-4 theme-form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="address"
+                                style="height: 100px"></textarea>
+                            <label for="address">Enter Address</label>
+                        </div>
+                    </form>
+
+                    <form>
+                        <div class="form-floating mb-4 theme-form-floating">
+                            <input type="email" class="form-control" id="pin" placeholder="Enter Pin Code">
+                            <label for="pin">Pin Code</label>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-md btn-theme-outline fw-bold"
-                        data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-md fw-bold text-light theme-bg-color">Save changes</button>
+                    <button type="button" class="btn btn-secondary btn-md" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn theme-bg-color btn-md text-white" data-bs-dismiss="modal">Save
+                        changes</button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Ask a question Modal End -->
+    <!-- Add address modal box end -->
 
-    <!-- Review Modal Start -->
-    <div class="modal fade theme-modal question-modal" id="writereview" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
+    <!-- Location Modal Start -->
+    <div class="modal location-modal fade theme-modal" id="locationModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Write a review</h1>
+                    <h5 class="modal-title" id="exampleModalLabel1">Choose your Delivery Location</h5>
+                    <p class="mt-1 text-content">Enter your address and we will specify the offer for your area.</p>
                     <button type="button" class="btn-close" data-bs-dismiss="modal">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
-                <div class="modal-body pt-0">
-                    <form class="product-review-form">
-                        <div class="product-wrapper">
-                            <div class="product-image">
-                                <img class="img-fluid" alt="Solid Collared Tshirts"
-                                    src="../assets/images/fashion/product/26.jpg">
-                            </div>
-                            <div class="product-content">
-                                <h5 class="name">Solid Collared Tshirts</h5>
-                                <div class="product-review-rating">
-                                    <div class="product-rating">
-                                        <h6 class="price-number">$16.00</h6>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="modal-body">
+                    <div class="location-list">
+                        <div class="search-input">
+                            <input type="search" class="form-control" placeholder="Search Your Area">
+                            <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
-                        <div class="review-box">
-                            <div class="product-review-rating">
-                                <label>Rating</label>
-                                <div class="product-rating">
-                                    <ul class="rating">
-                                        <li>
-                                            <i data-feather="star" class="fill"></i>
-                                        </li>
-                                        <li>
-                                            <i data-feather="star" class="fill"></i>
-                                        </li>
-                                        <li>
-                                            <i data-feather="star" class="fill"></i>
-                                        </li>
-                                        <li>
-                                            <i data-feather="star" class="fill"></i>
-                                        </li>
-                                        <li>
-                                            <i data-feather="star"></i>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+
+                        <div class="disabled-box">
+                            <h6>Select a Location</h6>
                         </div>
-                        <div class="review-box">
-                            <label for="content" class="form-label">Your Question *</label>
-                            <textarea id="content" rows="3" class="form-control" placeholder="Your Question"></textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-md btn-theme-outline fw-bold"
-                        data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-md fw-bold text-light theme-bg-color">Save changes</button>
+
+                        <ul class="location-select custom-height">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>Alabama</h6>
+                                    <span>Min: $130</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>Arizona</h6>
+                                    <span>Min: $150</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>California</h6>
+                                    <span>Min: $110</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>Colorado</h6>
+                                    <span>Min: $140</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>Florida</h6>
+                                    <span>Min: $160</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>Georgia</h6>
+                                    <span>Min: $120</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>Kansas</h6>
+                                    <span>Min: $170</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>Minnesota</h6>
+                                    <span>Min: $120</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>New York</h6>
+                                    <span>Min: $110</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>Washington</h6>
+                                    <span>Min: $130</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Review Modal End -->
+    <!-- Location Modal End -->
+
+    <!-- Edit Profile Start -->
+    <div class="modal fade theme-modal" id="editProfile" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">Edit Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-xxl-12">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="pname" value="Jack Jennas">
+                                    <label for="pname">Full Name</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-6">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="email" class="form-control" id="email1" value="vicki.pope@gmail.com">
+                                    <label for="email1">Email address</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-6">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input class="form-control" type="tel" value="4567891234" name="mobile" id="mobile"
+                                        maxlength="10" oninput="javascript: if (this.value.length > this.maxLength) this.value =
+                                            this.value.slice(0, this.maxLength);">
+                                    <label for="mobile">Email address</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-12">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="address1"
+                                        value="8424 James Lane South San Francisco">
+                                    <label for="address1">Add Address</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-12">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="address2" value="CA 94080">
+                                    <label for="address2">Add Address 2</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-4">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <select class="form-select" id="floatingSelect1">
+                                        <option selected>Choose Your Country</option>
+                                        <option value="kingdom">United Kingdom</option>
+                                        <option value="states">United States</option>
+                                        <option value="fra">France</option>
+                                        <option value="china">China</option>
+                                        <option value="spain">Spain</option>
+                                        <option value="italy">Italy</option>
+                                        <option value="turkey">Turkey</option>
+                                        <option value="germany">Germany</option>
+                                        <option value="russian">Russian Federation</option>
+                                        <option value="malay">Malaysia</option>
+                                        <option value="mexico">Mexico</option>
+                                        <option value="austria">Austria</option>
+                                        <option value="hong">Hong Kong SAR, China</option>
+                                        <option value="ukraine">Ukraine</option>
+                                        <option value="thailand">Thailand</option>
+                                        <option value="saudi">Saudi Arabia</option>
+                                        <option value="canada">Canada</option>
+                                        <option value="singa">Singapore</option>
+                                    </select>
+                                    <label for="floatingSelect">Country</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-4">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <select class="form-select" id="floatingSelect">
+                                        <option selected>Choose Your City</option>
+                                        <option value="kingdom">India</option>
+                                        <option value="states">Canada</option>
+                                        <option value="fra">Dubai</option>
+                                        <option value="china">Los Angeles</option>
+                                        <option value="spain">Thailand</option>
+                                    </select>
+                                    <label for="floatingSelect">City</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-4">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="address3" value="94080">
+                                    <label for="address3">Pin Code</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-animation btn-md fw-bold"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" data-bs-dismiss="modal"
+                        class="btn theme-bg-color btn-md fw-bold text-light">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Edit Profile End -->
+
+    <!-- Edit Card Start -->
+    <div class="modal fade theme-modal" id="editCard" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel8">Edit Card</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-xxl-6">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="finame" value="Mark">
+                                    <label for="finame">First Name</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-6">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="laname" value="Jecno">
+                                    <label for="laname">Last Name</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-4">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <select class="form-select" id="floatingSelect12">
+                                        <option selected>Card Type</option>
+                                        <option value="kingdom">Visa Card</option>
+                                        <option value="states">MasterCard Card</option>
+                                        <option value="fra">RuPay Card</option>
+                                        <option value="china">Contactless Card</option>
+                                        <option value="spain">Maestro Card</option>
+                                    </select>
+                                    <label for="floatingSelect12">Card Type</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-animation btn-md fw-bold"
+                        data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn theme-bg-color btn-md fw-bold text-light">Update Card</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Edit Card End -->
+
+    <!-- Remove Profile Modal Start -->
+    <div class="modal fade theme-modal remove-profile" id="removeProfile" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header d-block text-center">
+                    <h5 class="modal-title w-100" id="exampleModalLabel22">Are You Sure ?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="remove-box">
+                        <p>The permission for the use/group, preview is inherited from the object, object will create a
+                            new permission for this object</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-animation btn-md fw-bold" data-bs-dismiss="modal">No</button>
+                    <button type="button" class="btn theme-bg-color btn-md fw-bold text-light"
+                        data-bs-target="#removeAddress" data-bs-toggle="modal">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade theme-modal remove-profile" id="removeAddress" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel12">Done!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="remove-box text-center">
+                        <h4 class="text-content">It's Removed.</h4>
+                    </div>
+                </div>
+                <div class="modal-footer pt-0">
+                    <button type="button" class="btn theme-bg-color btn-md fw-bold text-light"
+                        data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Remove Profile Modal End -->
 
     <!-- Bg overlay Start -->
     <div class="bg-overlay"></div>
