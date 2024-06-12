@@ -1,13 +1,13 @@
  /**=====================
      Fly Cart js
 ==========================**/
- ₹('.btn-cart').on('click', function () {
-     if (₹(window).width() > 768) {
-         var cart = ₹('.button-item');
+ $('.btn-cart').on('click', function () {
+     if ($(window).width() > 768) {
+         var cart = $('.button-item');
      } else {
-         var cart = ₹('.mobile-cart ul li a .icli.fly-cate');
+         var cart = $('.mobile-cart ul li a .icli.fly-cate');
      }
-     var imgtodrag = ₹(this).parents('.product-box-4, .deal-box').find(".product-image img, .category-image img").eq(0);
+     var imgtodrag = $(this).parents('.product-box-4, .deal-box').find(".product-image img, .category-image img").eq(0);
      if (imgtodrag) {
          var imgclone = imgtodrag.clone()
              .offset({
@@ -21,7 +21,7 @@
                  'width': '130px',
                  'z-index': '100'
              })
-             .appendTo(₹('body'))
+             .appendTo($('body'))
              .animate({
                  'top': cart.offset().top + 10,
                  'left': cart.offset().left + 10,
@@ -33,7 +33,7 @@
              'width': 0,
              'height': 0
          }, function () {
-             ₹(this).detach()
+             $(this).detach()
          });
      }
  });

@@ -156,7 +156,7 @@
         if (t) {
             if ("string" == typeof t) return f(t, e);
             var i = Object.prototype.toString.call(t).slice(8, -1);
-            return "Object" === i && t.constructor && (i = t.constructor.name), "Map" === i || "Set" === i ? Array.from(t) : "Arguments" === i || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array₹/.test(i) ? f(t, e) : void 0
+            return "Object" === i && t.constructor && (i = t.constructor.name), "Map" === i || "Set" === i ? Array.from(t) : "Arguments" === i || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(i) ? f(t, e) : void 0
         }
     }
 
@@ -354,7 +354,7 @@
             }, {
                 key: "getOpacityFromRGBA",
                 value: function (t) {
-                    return parseFloat(t.replace(/^.*,(.+)\)/, "₹1"))
+                    return parseFloat(t.replace(/^.*,(.+)\)/, "$1"))
                 }
             }, {
                 key: "rgb2hex",
@@ -364,7 +364,7 @@
             }, {
                 key: "isColorHex",
                 value: function (t) {
-                    return /(^#[0-9A-F]{6}₹)|(^#[0-9A-F]{3}₹)|(^#[0-9A-F]{8}₹)/i.test(t)
+                    return /(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)|(^#[0-9A-F]{8}$)/i.test(t)
                 }
             }, {
                 key: "getPolygonPos",
@@ -389,7 +389,7 @@
                 value: function (t) {
                     var e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "x",
                         i = t.toString().slice();
-                    return i = i.replace(/[` ~!@#₹%^&*()|+\=?;:'",.<>{}[\]\\/]/gi, e)
+                    return i = i.replace(/[` ~!@#$%^&*()|+\=?;:'",.<>{}[\]\\/]/gi, e)
                 }
             }, {
                 key: "negToZero",
@@ -4550,33 +4550,33 @@
                         return i
                     }
                     var h = a ? t.getUTCFullYear() : t.getFullYear();
-                    e = (e = (e = e.replace(/(^|[^\\])yyyy+/g, "₹1" + h)).replace(/(^|[^\\])yy/g, "₹1" + h.toString().substr(2, 2))).replace(/(^|[^\\])y/g, "₹1" + h);
+                    e = (e = (e = e.replace(/(^|[^\\])yyyy+/g, "$1" + h)).replace(/(^|[^\\])yy/g, "$1" + h.toString().substr(2, 2))).replace(/(^|[^\\])y/g, "$1" + h);
                     var c = (a ? t.getUTCMonth() : t.getMonth()) + 1;
-                    e = (e = (e = (e = e.replace(/(^|[^\\])MMMM+/g, "₹1" + s[0])).replace(/(^|[^\\])MMM/g, "₹1" + r[0])).replace(/(^|[^\\])MM/g, "₹1" + l(c))).replace(/(^|[^\\])M/g, "₹1" + c);
+                    e = (e = (e = (e = e.replace(/(^|[^\\])MMMM+/g, "$1" + s[0])).replace(/(^|[^\\])MMM/g, "$1" + r[0])).replace(/(^|[^\\])MM/g, "$1" + l(c))).replace(/(^|[^\\])M/g, "$1" + c);
                     var d = a ? t.getUTCDate() : t.getDate();
-                    e = (e = (e = (e = e.replace(/(^|[^\\])dddd+/g, "₹1" + o[0])).replace(/(^|[^\\])ddd/g, "₹1" + n[0])).replace(/(^|[^\\])dd/g, "₹1" + l(d))).replace(/(^|[^\\])d/g, "₹1" + d);
+                    e = (e = (e = (e = e.replace(/(^|[^\\])dddd+/g, "$1" + o[0])).replace(/(^|[^\\])ddd/g, "$1" + n[0])).replace(/(^|[^\\])dd/g, "$1" + l(d))).replace(/(^|[^\\])d/g, "$1" + d);
                     var g = a ? t.getUTCHours() : t.getHours(),
                         p = g > 12 ? g - 12 : 0 === g ? 12 : g;
-                    e = (e = (e = (e = e.replace(/(^|[^\\])HH+/g, "₹1" + l(g))).replace(/(^|[^\\])H/g, "₹1" + g)).replace(/(^|[^\\])hh+/g, "₹1" + l(p))).replace(/(^|[^\\])h/g, "₹1" + p);
+                    e = (e = (e = (e = e.replace(/(^|[^\\])HH+/g, "$1" + l(g))).replace(/(^|[^\\])H/g, "$1" + g)).replace(/(^|[^\\])hh+/g, "$1" + l(p))).replace(/(^|[^\\])h/g, "$1" + p);
                     var f = a ? t.getUTCMinutes() : t.getMinutes();
-                    e = (e = e.replace(/(^|[^\\])mm+/g, "₹1" + l(f))).replace(/(^|[^\\])m/g, "₹1" + f);
+                    e = (e = e.replace(/(^|[^\\])mm+/g, "$1" + l(f))).replace(/(^|[^\\])m/g, "$1" + f);
                     var x = a ? t.getUTCSeconds() : t.getSeconds();
-                    e = (e = e.replace(/(^|[^\\])ss+/g, "₹1" + l(x))).replace(/(^|[^\\])s/g, "₹1" + x);
+                    e = (e = e.replace(/(^|[^\\])ss+/g, "$1" + l(x))).replace(/(^|[^\\])s/g, "$1" + x);
                     var b = a ? t.getUTCMilliseconds() : t.getMilliseconds();
-                    e = e.replace(/(^|[^\\])fff+/g, "₹1" + l(b, 3)), b = Math.round(b / 10), e = e.replace(/(^|[^\\])ff/g, "₹1" + l(b)), b = Math.round(b / 10);
+                    e = e.replace(/(^|[^\\])fff+/g, "$1" + l(b, 3)), b = Math.round(b / 10), e = e.replace(/(^|[^\\])ff/g, "$1" + l(b)), b = Math.round(b / 10);
                     var v = g < 12 ? "AM" : "PM";
-                    e = (e = (e = e.replace(/(^|[^\\])f/g, "₹1" + b)).replace(/(^|[^\\])TT+/g, "₹1" + v)).replace(/(^|[^\\])T/g, "₹1" + v.charAt(0));
+                    e = (e = (e = e.replace(/(^|[^\\])f/g, "$1" + b)).replace(/(^|[^\\])TT+/g, "$1" + v)).replace(/(^|[^\\])T/g, "$1" + v.charAt(0));
                     var m = v.toLowerCase();
-                    e = (e = e.replace(/(^|[^\\])tt+/g, "₹1" + m)).replace(/(^|[^\\])t/g, "₹1" + m.charAt(0));
+                    e = (e = e.replace(/(^|[^\\])tt+/g, "$1" + m)).replace(/(^|[^\\])t/g, "$1" + m.charAt(0));
                     var y = -t.getTimezoneOffset(),
                         w = a || !y ? "Z" : y > 0 ? "+" : "-";
                     if (!a) {
                         var k = (y = Math.abs(y)) % 60;
                         w += l(Math.floor(y / 60)) + ":" + l(k)
                     }
-                    e = e.replace(/(^|[^\\])K/g, "₹1" + w);
+                    e = e.replace(/(^|[^\\])K/g, "$1" + w);
                     var A = (a ? t.getUTCDay() : t.getDay()) + 1;
-                    return e = (e = (e = (e = (e = e.replace(new RegExp(o[0], "g"), o[A])).replace(new RegExp(n[0], "g"), n[A])).replace(new RegExp(s[0], "g"), s[c])).replace(new RegExp(r[0], "g"), r[c])).replace(/\\(.)/g, "₹1")
+                    return e = (e = (e = (e = (e = e.replace(new RegExp(o[0], "g"), o[A])).replace(new RegExp(n[0], "g"), n[A])).replace(new RegExp(s[0], "g"), s[c])).replace(new RegExp(r[0], "g"), r[c])).replace(/\\(.)/g, "$1")
                 }
             }, {
                 key: "getTimeUnitsfromTimestamp",
@@ -6423,7 +6423,7 @@
                         i = t.replace(/xmlns="http:\/\/www.w3.org\/2000\/svg"/g, (function (t) {
                             return 2 === ++e ? 'xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev"' : t
                         }));
-                    return i = (i = i.replace(/xmlns:NS\d+=""/g, "")).replace(/NS\d+:(\w+:\w+=")/g, "₹1")
+                    return i = (i = i.replace(/xmlns:NS\d+=""/g, "")).replace(/NS\d+:(\w+:\w+=")/g, "$1")
                 }
             }, {
                 key: "getSvgString",
@@ -7492,7 +7492,7 @@
                 }
             }]), t
         }(),
-        ₹ = function () {
+        $ = function () {
             function t(e) {
                 a(this, t), this.ctx = e, this.w = e.w;
                 var i = this.w;
@@ -7835,7 +7835,7 @@
                     var i, a, s = this.w.globals,
                         r = this.w.config,
                         o = new _(this.ctx),
-                        n = new ₹(this.ctx);
+                        n = new $(this.ctx);
                     s.axisCharts && "radar" !== t && (s.isBarHorizontal ? (a = n.drawYaxisInversed(0), i = o.drawXaxisInversed(0), s.dom.elGraphical.add(i), s.dom.elGraphical.add(a)) : (i = o.drawXaxis(), s.dom.elGraphical.add(i), r.yaxis.map((function (t, e) {
                         -1 === s.ignoreYAxisIndexes.indexOf(e) && (a = n.drawYaxis(e), s.dom.Paper.add(a))
                     }))))
@@ -8501,7 +8501,7 @@
                         default:
                             throw new Error("Legend position not supported")
                     }
-                    this.dimGrid.setGridXPosForDualYAxis(s, a), new ₹(this.ctx).setYAxisXPosition(a, s)
+                    this.dimGrid.setGridXPosForDualYAxis(s, a), new $(this.ctx).setYAxisXPosition(a, s)
                 }
             }, {
                 key: "setDimensionsForNonAxisCharts",
@@ -13911,18 +13911,18 @@
             }, e.addEventListener("DOMContentLoaded", (function () {
                 a.parser.draw || a.prepare()
             }), !1), a.regex = {
-                numberAndUnit: /^([+-]?(\d+(\.\d*)?|\.\d+)(e[+-]?\d+)?)([a-z%]*)₹/i,
-                hex: /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})₹/i,
+                numberAndUnit: /^([+-]?(\d+(\.\d*)?|\.\d+)(e[+-]?\d+)?)([a-z%]*)$/i,
+                hex: /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i,
                 rgb: /rgb\((\d+),(\d+),(\d+)\)/,
                 reference: /#([a-z0-9\-_]+)/i,
                 transforms: /\)\s*,?\s*/,
                 whitespace: /\s/g,
-                isHex: /^#[a-f0-9]{3,6}₹/i,
+                isHex: /^#[a-f0-9]{3,6}$/i,
                 isRgb: /^rgb\(/,
                 isCss: /[^:]+:[^;]+;?/,
-                isBlank: /^(\s+)?₹/,
-                isNumber: /^[+-]?(\d+(\.\d*)?|\.\d+)(e[+-]?\d+)?₹/i,
-                isPercent: /^-?[\d\.]+%₹/,
+                isBlank: /^(\s+)?$/,
+                isNumber: /^[+-]?(\d+(\.\d*)?|\.\d+)(e[+-]?\d+)?$/i,
+                isPercent: /^-?[\d\.]+%$/,
                 isImage: /\.(jpg|jpeg|png|gif|svg)(\?[^=]+.*)?/i,
                 delimiter: /[\s,]+/,
                 hyphen: /([^e])\-/gi,
@@ -14089,7 +14089,7 @@
                         A: 7,
                         Z: 0
                     };
-                    t = "string" == typeof t ? t.replace(a.regex.numbersWithDots, h).replace(a.regex.pathLetters, " ₹& ").replace(a.regex.hyphen, "₹1 -").trim().split(a.regex.delimiter) : t.reduce((function (t, e) {
+                    t = "string" == typeof t ? t.replace(a.regex.numbersWithDots, h).replace(a.regex.pathLetters, " $& ").replace(a.regex.hyphen, "$1 -").trim().split(a.regex.delimiter) : t.reduce((function (t, e) {
                         return [].concat.call(t, e)
                     }), []);
                     var r = [],
@@ -14264,8 +14264,8 @@
                     },
                     svg: function (t) {
                         var i = e.createElement("svg");
-                        if (!(t && this instanceof a.Parent)) return i.appendChild(t = e.createElement("svg")), this.writeDataToDom(), t.appendChild(this.node.cloneNode(!0)), i.innerHTML.replace(/^<svg>/, "").replace(/<\/svg>₹/, "");
-                        i.innerHTML = "<svg>" + t.replace(/\n/, "").replace(/<([\w:-]+)([^<]+?)\/>/g, "<₹1₹2></₹1>") + "</svg>";
+                        if (!(t && this instanceof a.Parent)) return i.appendChild(t = e.createElement("svg")), this.writeDataToDom(), t.appendChild(this.node.cloneNode(!0)), i.innerHTML.replace(/^<svg>/, "").replace(/<\/svg>$/, "");
+                        i.innerHTML = "<svg>" + t.replace(/\n/, "").replace(/<([\w:-]+)([^<]+?)\/>/g, "<$1$2></$1>") + "</svg>";
                         for (var s = 0, r = i.firstChild.childNodes.length; s < r; s++) this.node.appendChild(i.firstChild.firstChild);
                         return this
                     },
@@ -15842,7 +15842,7 @@
                 };
 
             function s(t) {
-                return Array.isArray(t) && (t = new SVG.Array(t)), t.toString().replace(/^\s+/, "").replace(/\s+₹/, "").replace(/\s+/g, " ")
+                return Array.isArray(t) && (t = new SVG.Array(t)), t.toString().replace(/^\s+/, "").replace(/\s+$/, "").replace(/\s+/g, " ")
             }
 
             function r(t) {
@@ -16629,7 +16629,7 @@
                     var o = i.grid.drawGrid();
                     i.annotations = new P(i), i.annotations.drawImageAnnos(), i.annotations.drawTextAnnos(), "back" === a.config.grid.position && o && a.globals.dom.elGraphical.add(o.el);
                     var n = new _(t.ctx),
-                        l = new ₹(t.ctx);
+                        l = new $(t.ctx);
                     if (null !== o && (n.xAxisLabelCorrections(o.xAxisTickWidth), l.setYAxisTextAlignments(), a.config.yaxis.map((function (t, e) {
                             -1 === a.globals.ignoreYAxisIndexes.indexOf(e) && l.yAxisTitleRotate(e, t.opposite)
                         }))), "back" === a.config.annotations.position && (a.globals.dom.Paper.add(a.globals.dom.elAnnotations), i.annotations.drawAxesAnnotations()), Array.isArray(e.elGraph))

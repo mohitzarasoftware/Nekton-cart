@@ -1,15 +1,15 @@
 /**=====================
      Sticky Cart Bottom js
 ==========================**/
-₹(window).scroll(function () {
-  var scroll = ₹(window).scrollTop();
+$(window).scroll(function () {
+  var scroll = $(window).scrollTop();
   var width_content = jQuery(window).width();
 
   if (width_content > "300") {
     if (scroll >= 800) {
-      ₹("body").addClass("stickyCart");
+      $("body").addClass("stickyCart");
     } else {
-      ₹("body").removeClass("stickyCart");
+      $("body").removeClass("stickyCart");
     }
   }
 });

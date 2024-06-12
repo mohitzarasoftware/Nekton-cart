@@ -1,24 +1,24 @@
  /**=====================
      Wizard js
 ==========================**/
- ₹(document).ready(function () {
+ $(document).ready(function () {
      // hidden things
-     ₹(".form-business").hide();
+     $(".form-business").hide();
      // next button
-     ₹(".proceed-btn").on({
+     $(".proceed-btn").on({
          click: function () {
-             ₹("#myTab").find(".active").parent().next().find('.nav-link').addClass("active");
-             ₹(this).parents(".tab-pane").fadeOut("slow", function () {
-                 ₹(this).next(".tab-pane").fadeIn("slow");
+             $("#myTab").find(".active").parent().next().find('.nav-link').addClass("active");
+             $(this).parents(".tab-pane").fadeOut("slow", function () {
+                 $(this).next(".tab-pane").fadeIn("slow");
              });
          }
      });
      // back button
-     ₹(".backward-btn").on({
+     $(".backward-btn").on({
          click: function () {
-             ₹("#myTab .active").parent().last().find('.nav-link').removeClass("active");
-             ₹(this).parents(".tab-pane").fadeOut("slow", function () {
-                 ₹(this).prev(".tab-pane").fadeIn("slow");
+             $("#myTab .active").parent().last().find('.nav-link').removeClass("active");
+             $(this).parents(".tab-pane").fadeOut("slow", function () {
+                 $(this).prev(".tab-pane").fadeIn("slow");
              });
          }
      });
