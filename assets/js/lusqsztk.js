@@ -128,16 +128,16 @@
                          })
                      }
 
-                     function _typeof$6(t) {
-                         return _typeof$6 = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (t) {
+                     function _typeof₹6(t) {
+                         return _typeof₹6 = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (t) {
                              return typeof t
                          } : function (t) {
                              return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
-                         }, _typeof$6(t)
+                         }, _typeof₹6(t)
                      }
                      var subframeEnabled = !0,
                          expressionsPlugin = null,
-                         idPrefix$1 = "",
+                         idPrefix₹1 = "",
                          isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent),
                          _shouldRoundValues = !1,
                          bmPow = Math.pow,
@@ -147,14 +147,14 @@
                          bmMin = Math.min,
                          BMMath = {};
 
-                     function ProjectInterface$1() {
+                     function ProjectInterface₹1() {
                          return {}
                      }! function () {
                          var t, e = ["abs", "acos", "acosh", "asin", "asinh", "atan", "atanh", "atan2", "ceil", "cbrt", "expm1", "clz32", "cos", "cosh", "exp", "floor", "fround", "hypot", "imul", "log", "log1p", "log2", "log10", "max", "min", "pow", "random", "round", "sign", "sin", "sinh", "sqrt", "tan", "tanh", "trunc", "E", "LN10", "LN2", "LOG10E", "LOG2E", "PI", "SQRT1_2", "SQRT2"],
                              r = e.length;
                          for (t = 0; t < r; t += 1) BMMath[e[t]] = Math[e[t]]
                      }(), BMMath.random = Math.random, BMMath.abs = function (t) {
-                         if ("object" === _typeof$6(t) && t.length) {
+                         if ("object" === _typeof₹6(t) && t.length) {
                              var e, r = createSizedArray(t.length),
                                  i = t.length;
                              for (e = 0; e < i; e += 1) r[e] = Math.abs(t[e]);
@@ -210,7 +210,7 @@
                          this.type = t, this.nativeError = e
                      }
                      var createElementID = (_count = 0, function () {
-                             return idPrefix$1 + "__lottie_element_" + (_count += 1)
+                             return idPrefix₹1 + "__lottie_element_" + (_count += 1)
                          }),
                          _count;
 
@@ -300,22 +300,22 @@
                              return defaultCurveSegments
                          },
                          setIdPrefix = function (t) {
-                             idPrefix$1 = t
+                             idPrefix₹1 = t
                          },
                          getIdPrefix = function () {
-                             return idPrefix$1
+                             return idPrefix₹1
                          };
 
                      function createNS(t) {
                          return document.createElementNS(svgNS, t)
                      }
 
-                     function _typeof$5(t) {
-                         return _typeof$5 = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (t) {
+                     function _typeof₹5(t) {
+                         return _typeof₹5 = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (t) {
                              return typeof t
                          } : function (t) {
                              return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
-                         }, _typeof$5(t)
+                         }, _typeof₹5(t)
                      }
                      var dataManager = function () {
                              var t, e, r = 1,
@@ -573,7 +573,7 @@
                                          }()), a.assetLoader || (a.assetLoader = function () {
                                              function t(t) {
                                                  var e = t.getResponseHeader("content-type");
-                                                 return e && "json" === t.responseType && -1 !== e.indexOf("json") || t.response && "object" === _typeof$5(t.response) ? t.response : t.response && "string" == typeof t.response ? JSON.parse(t.response) : t.responseText ? JSON.parse(t.responseText) : null
+                                                 return e && "json" === t.responseType && -1 !== e.indexOf("json") || t.response && "object" === _typeof₹5(t.response) ? t.response : t.response && "string" == typeof t.response ? JSON.parse(t.response) : t.responseText ? JSON.parse(t.responseText) : null
                                              }
                                              return {
                                                  load: function (e, r, i, s) {
@@ -858,12 +858,12 @@
                          return renderers[t]
                      }
 
-                     function _typeof$4(t) {
-                         return _typeof$4 = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (t) {
+                     function _typeof₹4(t) {
+                         return _typeof₹4 = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (t) {
                              return typeof t
                          } : function (t) {
                              return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
-                         }, _typeof$4(t)
+                         }, _typeof₹4(t)
                      }
                      var AnimationItem = function () {
                          this._cbs = [], this.name = "", this.path = "", this.isLoaded = !1, this.currentFrame = 0, this.currentRawFrame = 0, this.firstFrame = 0, this.totalFrames = 0, this.frameRate = 0, this.frameMult = 0, this.playSpeed = 1, this.playDirection = 1, this.playCount = 0, this.animationData = {}, this.assets = [], this.isPaused = !0, this.autoplay = !1, this.loop = !0, this.renderer = null, this.animationID = createElementID(), this.assetsPath = "", this.timeCompleted = 0, this.segmentPos = 0, this.isSubframeEnabled = getSubframeEnabled(), this.segments = [], this._idle = !0, this._completedLoop = !1, this.projectInterface = ProjectInterface(), this.imagePreloader = new ImagePreloader, this.audioController = audioControllerFactory(), this.markers = [], this.configAnimation = this.configAnimation.bind(this), this.onSetupError = this.onSetupError.bind(this), this.onSegmentComplete = this.onSegmentComplete.bind(this), this.drawnFrameEvent = new BMEnterFrameEvent("drawnFrame", 0, 0, 0)
@@ -879,7 +879,7 @@
                      }, AnimationItem.prototype.setupAnimation = function (t) {
                          dataManager.completeAnimation(t, this.configAnimation)
                      }, AnimationItem.prototype.setData = function (t, e) {
-                         e && "object" !== _typeof$4(e) && (e = JSON.parse(e));
+                         e && "object" !== _typeof₹4(e) && (e = JSON.parse(e));
                          var r = {
                                  wrapper: t,
                                  animationData: e
@@ -996,7 +996,7 @@
                          var r = -1;
                          this.isPaused && (this.currentRawFrame + this.firstFrame < t ? r = t : this.currentRawFrame + this.firstFrame > e && (r = e - t)), this.firstFrame = t, this.totalFrames = e - t, this.timeCompleted = this.totalFrames, -1 !== r && this.goToAndStop(r, !0)
                      }, AnimationItem.prototype.playSegments = function (t, e) {
-                         if (e && (this.segments.length = 0), "object" === _typeof$4(t[0])) {
+                         if (e && (this.segments.length = 0), "object" === _typeof₹4(t[0])) {
                              var r, i = t.length;
                              for (r = 0; r < i; r += 1) this.segments.push(t[r])
                          } else this.segments.push(t);
@@ -2063,12 +2063,12 @@
                              }
                          }();
 
-                     function _typeof$3(t) {
-                         return _typeof$3 = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (t) {
+                     function _typeof₹3(t) {
+                         return _typeof₹3 = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (t) {
                              return typeof t
                          } : function (t) {
                              return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
-                         }, _typeof$3(t)
+                         }, _typeof₹3(t)
                      }
                      var lottie = {},
                          standalone = "__[STANDALONE]__",
@@ -2154,7 +2154,7 @@
                      }
                      var readyStateCheckInterval = setInterval(checkReady, 100);
                      try {
-                         "object" !== _typeof$3(exports) && __webpack_require__.amdO
+                         "object" !== _typeof₹3(exports) && __webpack_require__.amdO
                      } catch (t) {}
                      var ShapeModifiers = function () {
                          var t = {},
@@ -3548,12 +3548,12 @@
 
                      function FrameElement() {}
 
-                     function _typeof$2(t) {
-                         return _typeof$2 = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (t) {
+                     function _typeof₹2(t) {
+                         return _typeof₹2 = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (t) {
                              return typeof t
                          } : function (t) {
                              return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
-                         }, _typeof$2(t)
+                         }, _typeof₹2(t)
                      }
                      extendPrototype([DynamicPropertyContainer], GroupEffect), GroupEffect.prototype.getValue = GroupEffect.prototype.iterateDynamicProperties, GroupEffect.prototype.init = function (t, e) {
                          var r;
@@ -3638,11 +3638,11 @@
                                      r = t.getFootageData();
 
                                  function i(t) {
-                                     if (r[t]) return e = t, "object" === _typeof$2(r = r[t]) ? i : r;
+                                     if (r[t]) return e = t, "object" === _typeof₹2(r = r[t]) ? i : r;
                                      var s = t.indexOf(e);
                                      if (-1 !== s) {
                                          var a = parseInt(t.substr(s + e.length), 10);
-                                         return "object" === _typeof$2(r = r[a]) ? i : r
+                                         return "object" === _typeof₹2(r = r[a]) ? i : r
                                      }
                                      return ""
                                  }
@@ -4718,7 +4718,7 @@
                              var M, w, F, I, V, B = 1.2 * t.finalSize * .714,
                                  R = !0;
                              F = P.length;
-                             var L, G, z, N, O, H, j, q, W, $, Y, X, K = -1,
+                             var L, G, z, N, O, H, j, q, W, ₹, Y, X, K = -1,
                                  J = o,
                                  Z = m,
                                  U = f,
@@ -4773,7 +4773,7 @@
                                          }
                                      }
                                      for (w = 0; w < F; w += 1)(M = P[w].a).p.propType && (V = P[w].s.getMult(k[s].anIndexes[w], S.a[w].s.totalChars), this._hasMaskedPath ? V.length ? _.translate(0, M.p.v[1] * V[0], -M.p.v[2] * V[1]) : _.translate(0, M.p.v[1] * V, -M.p.v[2] * V) : V.length ? _.translate(M.p.v[0] * V[0], M.p.v[1] * V[1], -M.p.v[2] * V[2]) : _.translate(M.p.v[0] * V, M.p.v[1] * V, -M.p.v[2] * V));
-                                     if (t.strokeWidthAnim && (W = H < 0 ? 0 : H), t.strokeColorAnim && ($ = "rgb(" + Math.round(255 * O[0]) + "," + Math.round(255 * O[1]) + "," + Math.round(255 * O[2]) + ")"), t.fillColorAnim && t.fc && (Y = "rgb(" + Math.round(255 * j[0]) + "," + Math.round(255 * j[1]) + "," + Math.round(255 * j[2]) + ")"), this._hasMaskedPath) {
+                                     if (t.strokeWidthAnim && (W = H < 0 ? 0 : H), t.strokeColorAnim && (₹ = "rgb(" + Math.round(255 * O[0]) + "," + Math.round(255 * O[1]) + "," + Math.round(255 * O[2]) + ")"), t.fillColorAnim && t.fc && (Y = "rgb(" + Math.round(255 * j[0]) + "," + Math.round(255 * j[1]) + "," + Math.round(255 * j[2]) + ")"), this._hasMaskedPath) {
                                          if (_.translate(0, -t.ls), _.translate(0, x[1] * B * .01 + i, 0), this._pathData.p.v) {
                                              b = (h.point[1] - c.point[1]) / (h.point[0] - c.point[0]);
                                              var ht = 180 * Math.atan(b) / Math.PI;
@@ -4792,7 +4792,7 @@
                                      }
                                      "html" === C ? tt = _.toCSS() : "svg" === C ? tt = _.to2dCSS() : et = [_.props[0], _.props[1], _.props[2], _.props[3], _.props[4], _.props[5], _.props[6], _.props[7], _.props[8], _.props[9], _.props[10], _.props[11], _.props[12], _.props[13], _.props[14], _.props[15]], X = N
                                  }
-                                 A <= s ? (I = new LetterProps(X, W, $, Y, tt, et), this.renderedLetters.push(I), A += 1, this.lettersChangedFlag = !0) : (I = this.renderedLetters[s], this.lettersChangedFlag = I.update(X, W, $, Y, tt, et) || this.lettersChangedFlag)
+                                 A <= s ? (I = new LetterProps(X, W, ₹, Y, tt, et), this.renderedLetters.push(I), A += 1, this.lettersChangedFlag = !0) : (I = this.renderedLetters[s], this.lettersChangedFlag = I.update(X, W, ₹, Y, tt, et) || this.lettersChangedFlag)
                              }
                          }
                      }, TextAnimatorProperty.prototype.getValue = function () {
@@ -6074,12 +6074,12 @@
                          return t
                      }();
 
-                     function _typeof$1(t) {
-                         return _typeof$1 = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (t) {
+                     function _typeof₹1(t) {
+                         return _typeof₹1 = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (t) {
                              return typeof t
                          } : function (t) {
                              return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
-                         }, _typeof$1(t)
+                         }, _typeof₹1(t)
                      }
 
                      function seedRandom(t, e) {
@@ -6110,7 +6110,7 @@
 
                          function p(t, e) {
                              var r, i = [],
-                                 s = _typeof$1(t);
+                                 s = _typeof₹1(t);
                              if (e && "object" == s)
                                  for (r in t) try {
                                      i.push(p(t[r], e - 1))
@@ -6158,7 +6158,7 @@
                          }, f(e.random(), t)
                      }
 
-                     function initialize$2(t) {
+                     function initialize₹2(t) {
                          seedRandom([], t)
                      }
                      var propTypes = {
@@ -6181,7 +6181,7 @@
                                  fetch = null,
                                  frames = null;
 
-                             function $bm_isInstanceOfArray(t) {
+                             function ₹bm_isInstanceOfArray(t) {
                                  return t.constructor === Array || t.constructor === Float32Array
                              }
 
@@ -6189,10 +6189,10 @@
                                  return "number" === t || "boolean" === t || "string" === t || e instanceof Number
                              }
 
-                             function $bm_neg(t) {
+                             function ₹bm_neg(t) {
                                  var e = _typeof(t);
                                  if ("number" === e || "boolean" === e || t instanceof Number) return -t;
-                                 if ($bm_isInstanceOfArray(t)) {
+                                 if (₹bm_isInstanceOfArray(t)) {
                                      var r, i = t.length,
                                          s = [];
                                      for (r = 0; r < i; r += 1) s[r] = -t[r];
@@ -6200,7 +6200,7 @@
                                  }
                                  return t.propType ? t.v : -t
                              }
-                             initialize$2(BMMath);
+                             initialize₹2(BMMath);
                              var easeInBez = BezierFactory.getBezierEasing(.333, 0, .833, .833, "easeIn").get,
                                  easeOutBez = BezierFactory.getBezierEasing(.167, .167, .667, 1, "easeOut").get,
                                  easeInOutBez = BezierFactory.getBezierEasing(.33, 0, .667, 1, "easeInOut").get;
@@ -6210,9 +6210,9 @@
                                      i = _typeof(e);
                                  if ("string" === r || "string" === i) return t + e;
                                  if (isNumerable(r, t) && isNumerable(i, e)) return t + e;
-                                 if ($bm_isInstanceOfArray(t) && isNumerable(i, e)) return (t = t.slice(0))[0] += e, t;
-                                 if (isNumerable(r, t) && $bm_isInstanceOfArray(e)) return (e = e.slice(0))[0] = t + e[0], e;
-                                 if ($bm_isInstanceOfArray(t) && $bm_isInstanceOfArray(e)) {
+                                 if (₹bm_isInstanceOfArray(t) && isNumerable(i, e)) return (t = t.slice(0))[0] += e, t;
+                                 if (isNumerable(r, t) && ₹bm_isInstanceOfArray(e)) return (e = e.slice(0))[0] = t + e[0], e;
+                                 if (₹bm_isInstanceOfArray(t) && ₹bm_isInstanceOfArray(e)) {
                                      for (var s = 0, a = t.length, n = e.length, o = []; s < a || s < n;)("number" == typeof t[s] || t[s] instanceof Number) && ("number" == typeof e[s] || e[s] instanceof Number) ? o[s] = t[s] + e[s] : o[s] = void 0 === e[s] ? t[s] : t[s] || e[s], s += 1;
                                      return o
                                  }
@@ -6224,9 +6224,9 @@
                                  var r = _typeof(t),
                                      i = _typeof(e);
                                  if (isNumerable(r, t) && isNumerable(i, e)) return "string" === r && (t = parseInt(t, 10)), "string" === i && (e = parseInt(e, 10)), t - e;
-                                 if ($bm_isInstanceOfArray(t) && isNumerable(i, e)) return (t = t.slice(0))[0] -= e, t;
-                                 if (isNumerable(r, t) && $bm_isInstanceOfArray(e)) return (e = e.slice(0))[0] = t - e[0], e;
-                                 if ($bm_isInstanceOfArray(t) && $bm_isInstanceOfArray(e)) {
+                                 if (₹bm_isInstanceOfArray(t) && isNumerable(i, e)) return (t = t.slice(0))[0] -= e, t;
+                                 if (isNumerable(r, t) && ₹bm_isInstanceOfArray(e)) return (e = e.slice(0))[0] = t - e[0], e;
+                                 if (₹bm_isInstanceOfArray(t) && ₹bm_isInstanceOfArray(e)) {
                                      for (var s = 0, a = t.length, n = e.length, o = []; s < a || s < n;)("number" == typeof t[s] || t[s] instanceof Number) && ("number" == typeof e[s] || e[s] instanceof Number) ? o[s] = t[s] - e[s] : o[s] = void 0 === e[s] ? t[s] : t[s] || e[s], s += 1;
                                      return o
                                  }
@@ -6237,11 +6237,11 @@
                                  var r, i, s, a = _typeof(t),
                                      n = _typeof(e);
                                  if (isNumerable(a, t) && isNumerable(n, e)) return t * e;
-                                 if ($bm_isInstanceOfArray(t) && isNumerable(n, e)) {
+                                 if (₹bm_isInstanceOfArray(t) && isNumerable(n, e)) {
                                      for (s = t.length, r = createTypedArray("float32", s), i = 0; i < s; i += 1) r[i] = t[i] * e;
                                      return r
                                  }
-                                 if (isNumerable(a, t) && $bm_isInstanceOfArray(e)) {
+                                 if (isNumerable(a, t) && ₹bm_isInstanceOfArray(e)) {
                                      for (s = e.length, r = createTypedArray("float32", s), i = 0; i < s; i += 1) r[i] = t * e[i];
                                      return r
                                  }
@@ -6252,11 +6252,11 @@
                                  var r, i, s, a = _typeof(t),
                                      n = _typeof(e);
                                  if (isNumerable(a, t) && isNumerable(n, e)) return t / e;
-                                 if ($bm_isInstanceOfArray(t) && isNumerable(n, e)) {
+                                 if (₹bm_isInstanceOfArray(t) && isNumerable(n, e)) {
                                      for (s = t.length, r = createTypedArray("float32", s), i = 0; i < s; i += 1) r[i] = t[i] / e;
                                      return r
                                  }
-                                 if (isNumerable(a, t) && $bm_isInstanceOfArray(e)) {
+                                 if (isNumerable(a, t) && ₹bm_isInstanceOfArray(e)) {
                                      for (s = e.length, r = createTypedArray("float32", s), i = 0; i < s; i += 1) r[i] = t / e[i];
                                      return r
                                  }
@@ -6266,11 +6266,11 @@
                              function mod(t, e) {
                                  return "string" == typeof t && (t = parseInt(t, 10)), "string" == typeof e && (e = parseInt(e, 10)), t % e
                              }
-                             var $bm_sum = sum,
-                                 $bm_sub = sub,
-                                 $bm_mul = mul,
-                                 $bm_div = div,
-                                 $bm_mod = mod;
+                             var ₹bm_sum = sum,
+                                 ₹bm_sub = sub,
+                                 ₹bm_mul = mul,
+                                 ₹bm_div = div,
+                                 ₹bm_mod = mod;
 
                              function clamp(t, e, r) {
                                  if (e > r) {
@@ -6388,7 +6388,7 @@
                                      needsVelocity = /velocity(?![\w\d])/.test(val),
                                      _needsRandom = -1 !== val.indexOf("random"),
                                      elemType = elem.data.ty,
-                                     transform, $bm_transform, content, effect, thisProperty = property;
+                                     transform, ₹bm_transform, content, effect, thisProperty = property;
                                  thisProperty.valueAtTime = thisProperty.getValueAtTime, Object.defineProperty(thisProperty, "value", {
                                      get: function () {
                                          return thisProperty.v
@@ -6399,7 +6399,7 @@
                                      width = elem.data.sw ? elem.data.sw : 0,
                                      height = elem.data.sh ? elem.data.sh : 0,
                                      name = elem.data.nm,
-                                     loopIn, loop_in, loopOut, loop_out, smooth, toWorld, fromWorld, fromComp, toComp, fromCompToSurface, position, rotation, anchorPoint, scale, thisLayer, thisComp, mask, valueAtTime, velocityAtTime, scoped_bm_rt, expression_function = eval("[function _expression_function(){" + val + ";scoped_bm_rt=$bm_rt}]")[0],
+                                     loopIn, loop_in, loopOut, loop_out, smooth, toWorld, fromWorld, fromComp, toComp, fromCompToSurface, position, rotation, anchorPoint, scale, thisLayer, thisComp, mask, valueAtTime, velocityAtTime, scoped_bm_rt, expression_function = eval("[function _expression_function(){" + val + ";scoped_bm_rt=₹bm_rt}]")[0],
                                      numKeys = property.kf ? data.k.length : 0,
                                      active = !this.data || !0 !== this.data.hd,
                                      wiggle = function (t, e) {
@@ -6452,7 +6452,7 @@
                                  function applyEase(t, e, r, i, s, a) {
                                      void 0 === s ? (s = r, a = i) : e = (e - r) / (i - r), e > 1 ? e = 1 : e < 0 && (e = 0);
                                      var n = t(e);
-                                     if ($bm_isInstanceOfArray(s)) {
+                                     if (₹bm_isInstanceOfArray(s)) {
                                          var o, h = s.length,
                                              l = createTypedArray("float32", h);
                                          for (o = 0; o < h; o += 1) l[o] = (a[o] - s[o]) * n + s[o];
@@ -6527,11 +6527,11 @@
                                      globalData = elem.globalData;
 
                                  function executeExpression(t) {
-                                     return value = t, this.frameExpressionId === elem.globalData.frameId && "textSelector" !== this.propType ? value : ("textSelector" === this.propType && (textIndex = this.textIndex, textTotal = this.textTotal, selectorValue = this.selectorValue), thisLayer || (text = elem.layerInterface.text, thisLayer = elem.layerInterface, thisComp = elem.comp.compInterface, toWorld = thisLayer.toWorld.bind(thisLayer), fromWorld = thisLayer.fromWorld.bind(thisLayer), fromComp = thisLayer.fromComp.bind(thisLayer), toComp = thisLayer.toComp.bind(thisLayer), mask = thisLayer.mask ? thisLayer.mask.bind(thisLayer) : null, fromCompToSurface = fromComp), transform || (transform = elem.layerInterface("ADBE Transform Group"), $bm_transform = transform, transform && (anchorPoint = transform.anchorPoint)), 4 !== elemType || content || (content = thisLayer("ADBE Root Vectors Group")), effect || (effect = thisLayer(4)), (hasParent = !(!elem.hierarchy || !elem.hierarchy.length)) && !parent && (parent = elem.hierarchy[0].layerInterface), time = this.comp.renderedFrame / this.comp.globalData.frameRate, _needsRandom && seedRandom(randSeed + time), needsVelocity && (velocity = velocityAtTime(time)), expression_function(), this.frameExpressionId = elem.globalData.frameId, scoped_bm_rt = scoped_bm_rt.propType === propTypes.SHAPE ? scoped_bm_rt.v : scoped_bm_rt)
+                                     return value = t, this.frameExpressionId === elem.globalData.frameId && "textSelector" !== this.propType ? value : ("textSelector" === this.propType && (textIndex = this.textIndex, textTotal = this.textTotal, selectorValue = this.selectorValue), thisLayer || (text = elem.layerInterface.text, thisLayer = elem.layerInterface, thisComp = elem.comp.compInterface, toWorld = thisLayer.toWorld.bind(thisLayer), fromWorld = thisLayer.fromWorld.bind(thisLayer), fromComp = thisLayer.fromComp.bind(thisLayer), toComp = thisLayer.toComp.bind(thisLayer), mask = thisLayer.mask ? thisLayer.mask.bind(thisLayer) : null, fromCompToSurface = fromComp), transform || (transform = elem.layerInterface("ADBE Transform Group"), ₹bm_transform = transform, transform && (anchorPoint = transform.anchorPoint)), 4 !== elemType || content || (content = thisLayer("ADBE Root Vectors Group")), effect || (effect = thisLayer(4)), (hasParent = !(!elem.hierarchy || !elem.hierarchy.length)) && !parent && (parent = elem.hierarchy[0].layerInterface), time = this.comp.renderedFrame / this.comp.globalData.frameRate, _needsRandom && seedRandom(randSeed + time), needsVelocity && (velocity = velocityAtTime(time)), expression_function(), this.frameExpressionId = elem.globalData.frameId, scoped_bm_rt = scoped_bm_rt.propType === propTypes.SHAPE ? scoped_bm_rt.v : scoped_bm_rt)
                                  }
-                                 return executeExpression.__preventDeadCodeRemoval = [$bm_transform, anchorPoint, time, velocity, inPoint, outPoint, width, height, name, loop_in, loop_out, smooth, toComp, fromCompToSurface, toWorld, fromWorld, mask, position, rotation, scale, thisComp, numKeys, active, wiggle, loopInDuration, loopOutDuration, comp, lookAt, easeOut, easeIn, ease, nearestKey, key, text, textIndex, textTotal, selectorValue, framesToTime, timeToFrames, sourceRectAtTime, substring, substr, posterizeTime, index, globalData], executeExpression
+                                 return executeExpression.__preventDeadCodeRemoval = [₹bm_transform, anchorPoint, time, velocity, inPoint, outPoint, width, height, name, loop_in, loop_out, smooth, toComp, fromCompToSurface, toWorld, fromWorld, mask, position, rotation, scale, thisComp, numKeys, active, wiggle, loopInDuration, loopOutDuration, comp, lookAt, easeOut, easeIn, ease, nearestKey, key, text, textIndex, textTotal, selectorValue, framesToTime, timeToFrames, sourceRectAtTime, substring, substr, posterizeTime, index, globalData], executeExpression
                              }
-                             return ob.initiateExpression = initiateExpression, ob.__preventDeadCodeRemoval = [window, document, XMLHttpRequest, fetch, frames, $bm_neg, add, $bm_sum, $bm_sub, $bm_mul, $bm_div, $bm_mod, clamp, radians_to_degrees, degreesToRadians, degrees_to_radians, normalize, rgbToHsl, hslToRgb, linear, random, createPath], ob
+                             return ob.initiateExpression = initiateExpression, ob.__preventDeadCodeRemoval = [window, document, XMLHttpRequest, fetch, frames, ₹bm_neg, add, ₹bm_sum, ₹bm_sub, ₹bm_mul, ₹bm_div, ₹bm_mod, clamp, radians_to_degrees, degreesToRadians, degrees_to_radians, normalize, rgbToHsl, hslToRgb, linear, random, createPath], ob
                          }(),
                          expressionHelpers = {
                              searchExpressions: function (t, e, r) {
@@ -6793,7 +6793,7 @@
                          }
                      }
 
-                     function initialize$1() {
+                     function initialize₹1() {
                          addPropertyDecorator()
                      }
 
@@ -7025,7 +7025,7 @@
                              var a = 1 == this.filterManager.effectElements[2].p.v ? "wrap" : "duplicate";
                              this.feGaussianBlur.setAttribute("edgeMode", a)
                          }
-                     }, registerRenderer("canvas", CanvasRenderer), registerRenderer("html", HybridRenderer), registerRenderer("svg", SVGRenderer), ShapeModifiers.registerModifier("tm", TrimModifier), ShapeModifiers.registerModifier("pb", PuckerAndBloatModifier), ShapeModifiers.registerModifier("rp", RepeaterModifier), ShapeModifiers.registerModifier("rd", RoundCornersModifier), setExpressionsPlugin(Expressions), initialize$1(), initialize(), registerEffect(20, SVGTintFilter, !0), registerEffect(21, SVGFillFilter, !0), registerEffect(22, SVGStrokeEffect, !1), registerEffect(23, SVGTritoneFilter, !0), registerEffect(24, SVGProLevelsFilter, !0), registerEffect(25, SVGDropShadowEffect, !0), registerEffect(28, SVGMatte3Effect, !1), registerEffect(29, SVGGaussianBlurEffect, !0), lottie
+                     }, registerRenderer("canvas", CanvasRenderer), registerRenderer("html", HybridRenderer), registerRenderer("svg", SVGRenderer), ShapeModifiers.registerModifier("tm", TrimModifier), ShapeModifiers.registerModifier("pb", PuckerAndBloatModifier), ShapeModifiers.registerModifier("rp", RepeaterModifier), ShapeModifiers.registerModifier("rd", RoundCornersModifier), setExpressionsPlugin(Expressions), initialize₹1(), initialize(), registerEffect(20, SVGTintFilter, !0), registerEffect(21, SVGFillFilter, !0), registerEffect(22, SVGStrokeEffect, !1), registerEffect(23, SVGTritoneFilter, !0), registerEffect(24, SVGProLevelsFilter, !0), registerEffect(25, SVGDropShadowEffect, !0), registerEffect(28, SVGMatte3Effect, !1), registerEffect(29, SVGGaussianBlurEffect, !0), lottie
                  }, module.exports = factory())
              }
          },
@@ -7189,7 +7189,7 @@
          };
 
          function r(t) {
-             return t.startsWith("#") ? 4 === t.length ? `#${t[1]}${t[1]}${t[2]}${t[2]}${t[3]}${t[3]}` : t : e[t.toLowerCase()] || "#000000"
+             return t.startsWith("#") ? 4 === t.length ? `#₹{t[1]}₹{t[1]}₹{t[2]}₹{t[2]}₹{t[3]}₹{t[3]}` : t : e[t.toLowerCase()] || "#000000"
          }
 
          function i(t) {
@@ -7286,13 +7286,13 @@
          }
 
          function y(t, e, r, i) {
-             for (const s of e) s.name.toLowerCase() === r.toLowerCase() && (i ? n(t, s.path + `.${i}`, a(s.value, i)) : n(t, s.path, s.value))
+             for (const s of e) s.name.toLowerCase() === r.toLowerCase() && (i ? n(t, s.path + `.₹{i}`, a(s.value, i)) : n(t, s.path, s.value))
          }
 
          function g(t, e, r, i, s) {
              for (const a of e) {
                  if (a.name.toLowerCase() !== r.toLowerCase()) continue;
-                 const e = a.path + (s ? `.${s}` : "");
+                 const e = a.path + (s ? `.₹{s}` : "");
                  let o = 1;
                  "slider" === a.type ? o = a.value / 50 : "point" === a.type && (o = (a.value[0] + a.value[1]) / 2 / 50), n(t, e, i * o)
              }
@@ -7301,7 +7301,7 @@
          function v(t, e, r, i, s) {
              for (const a of e) {
                  if (a.name.toLowerCase() !== r.toLowerCase()) continue;
-                 n(t, a.path + (s ? `.${s}` : ""), i)
+                 n(t, a.path + (s ? `.₹{s}` : ""), i)
              }
          }
          let b;
@@ -7377,7 +7377,7 @@
                  if ("axis-x" === t) this.axisXChanged();
                  else if ("axis-y" === t) this.axisYChanged();
                  else {
-                     const e = this[`${t}Changed`];
+                     const e = this[`₹{t}Changed`];
                      e && e.call(this)
                  }
              }
@@ -7479,7 +7479,7 @@
                  this.src && await _(this.src), this._isReady && (this.unregisterLottie(), this.registerLottie())
              }
              movePaletteToCssVariables() {
-                 for (const [t, e] of Object.entries(this.palette)) this._root.querySelector(".body").style.setProperty(`--lord-icon-${t}-base`, e)
+                 for (const [t, e] of Object.entries(this.palette)) this._root.querySelector(".body").style.setProperty(`--lord-icon-₹{t}-base`, e)
              }
              get connectedTrigger() {
                  return this._connectedTrigger
@@ -7493,7 +7493,7 @@
                              for (const [t, o] of Object.entries(n.ef)) {
                                  const n = "ef.0.v.k";
                                  let h;
-                                 if (h = e ? `renderer.elements.${i}.effectsManager.effectElements.${t}.effectElements.0.p.v` : `layers.${i}.ef.${t}.${n}`, !s(o, n)) continue;
+                                 if (h = e ? `renderer.elements.₹{i}.effectsManager.effectElements.₹{t}.effectElements.0.p.v` : `layers.₹{i}.ef.₹{t}.₹{n}`, !s(o, n)) continue;
                                  const l = a(o, n);
                                  let p = "unkown";
                                  if ("ADBE Color Control" === o.mn ? p = "color" : "ADBE Slider Control" === o.mn ? p = "slider" : "ADBE Point Control" === o.mn ? p = "point" : "ADBE Checkbox Control" === o.mn && (p = "checkbox"), "unkown" === p) continue;

@@ -1,7 +1,7 @@
  /**=====================
      Custom Slick Animated js
 ==========================**/
- $('.slider-animate').slick({
+ ₹('.slider-animate').slick({
      autoplay: true,
      speed: 1800,
      lazyLoad: 'progressive',
